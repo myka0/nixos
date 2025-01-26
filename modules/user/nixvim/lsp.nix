@@ -1,0 +1,28 @@
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}: {
+  config = lib.mkIf config.nixvim.enable {
+    programs.nixvim = {
+      plugins.lsp = {
+        enable = true;
+
+        servers = {
+          clangd.enable = true;
+          gopls.enable = true;
+          ts_ls.enable = true;
+          volar.enable = true;
+          tailwindcss.enable = true;
+          pylsp.enable = true;
+
+          lua_ls = {
+            enable = true;
+            settings.telemetry.enable = false;
+          };
+        };
+      };
+    };
+  };
+}
