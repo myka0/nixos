@@ -7,6 +7,7 @@
     # Development Tools
     git
     gitlab-runner
+    gum
     libxml2
     jansson
     meson
