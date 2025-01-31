@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e
-pushd ~/nixos/
+pushd ~/nixos/ > /dev/null
 
 nvim
 alejandra . &>/dev/null
@@ -29,4 +29,4 @@ commit_message="Generation $gen_number $gen_date $gen_time"
 git commit -am "$commit_message"
 git push
 
-popd
+popd > /dev/null
