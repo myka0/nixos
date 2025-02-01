@@ -5,6 +5,7 @@
 }: {
   home.packages = with pkgs; [
     # GUI Apps
+    inputs.zen-browser.packages.x86_64-linux.default
     nemo-with-extensions
     kitty
     firefox

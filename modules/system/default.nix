@@ -9,6 +9,5 @@
     ./polkit.nix
     ./sound.nix
     ./steam.nix
-    ./zen-browser.nix
   ];
 }
