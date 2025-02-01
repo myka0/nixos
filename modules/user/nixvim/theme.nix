@@ -17,7 +17,7 @@
 
         vim.opt.background = 'dark'
         vim.g.gruvbox_material_background = 'hard'
-        vim.g.gruvbox_material_foreground = 'mix'
+        vim.g.gruvbox_material_foreground = 'original'
         vim.cmd('colorscheme gruvbox-material')
       '';
     };

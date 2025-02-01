@@ -11,6 +11,7 @@
     ./keymaps.nix
     ./lsp.nix
     ./lualine.nix
+    ./mini.nix
     ./nvim-tree.nix
     ./supermaven.nix
     ./theme.nix
@@ -42,10 +43,10 @@
       ];
 
       plugins = {
-        indent-blankline.enable = true;
         telescope.enable = true;
         web-devicons.enable = true;
         improved-search.enable = true;
+        indent-blankline.enable = true;
         markdown-preview.enable = true;
         typescript-tools.enable = true;
         nvim-autopairs.enable = true;
