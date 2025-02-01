@@ -19,19 +19,7 @@
 
           mapping = {
             "<CR>" = ''
-              function(fallback)
-                if cmp.visible() then
-                  cmp.mapping.confirm({ select = true })
-                elseif cmp.visible() and luasnip.expandable() then
-                  luasnip.expand()
-                elseif cmp.visible() and luasnip.expand_or_jumpable() then
-                  luasnip.expand_or_jump()
-                elseif cmp.visible() and check_backspace() then
-                  fallback()
-                else
-                  fallback()
-                end
-              end
+              cmp.mapping.confirm({ select = true })
             '';
 
             "<Tab>" = ''

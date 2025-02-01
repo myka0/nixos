@@ -44,7 +44,6 @@
       plugins = {
         indent-blankline.enable = true;
         telescope.enable = true;
-        treesitter.enable = true;
         web-devicons.enable = true;
         improved-search.enable = true;
         markdown-preview.enable = true;
@@ -56,6 +55,11 @@
         hardtime.enable = true;
         luasnip.enable = true;
         oil.enable = true;
+
+        treesitter = {
+          enable = true;
+          settings.highlight.enable = true;
+        };
 
         nvim-jdtls = {
           enable = true;
