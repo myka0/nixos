@@ -70,5 +70,6 @@
     egl-wayland
     eglexternalplatform
     libGL
+    valgrind
   ];
 }
