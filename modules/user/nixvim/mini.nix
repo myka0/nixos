@@ -35,6 +35,7 @@
         require('mini.operators').setup()
         require('mini.pairs').setup()
         require('mini.bracketed').setup()
+        require('mini.trailspace').setup()
         require('mini.indentscope').setup({
           delay = 50,
         })
