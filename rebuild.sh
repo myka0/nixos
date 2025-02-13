@@ -7,6 +7,7 @@ nvim
 alejandra . &>/dev/null
 
 git diff -U0 --color=always | gum pager
+nix flake update
 
 sudo -v
 sudo nixos-rebuild switch --flake ~/nixos/#default &>nixos-switch.log & PID=$! || (

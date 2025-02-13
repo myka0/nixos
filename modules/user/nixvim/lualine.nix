@@ -13,21 +13,30 @@
 
             sections = {
               lualine_a = ["mode"];
-              lualine_b = ["branch" "diff" "diagnostics" "buffers"];
-              lualine_c = [""];
-              lualine_x = ["searchcount" "selectioncount"];
-              lualine_y = ["encoding" "filetype"];
+              lualine_b = ["branch" "diagnostics"];
+              lualine_c = [
+                {
+                  __unkeyed-1 = "buffers";
+                  symbols = {
+                    alternate_file = "";
+                  };
+                }
+              ];
+              lualine_x = ["searchcount" "selectioncount" "diff"];
+              lualine_y = ["filetype"];
               lualine_z = ["progress" "location"];
             };
 
-            componentSeparators = {
-              left = "|";
-              right = "|";
-            };
+            options = {
+              component_separators = {
+                left = "";
+                right = "";
+              };
 
-            sectionSeparators = {
-              left = "";
-              right = "";
+              section_separators = {
+                left = "";
+                right = "";
+              };
             };
           };
         };
