@@ -8,6 +8,7 @@
     git
     gitlab-runner
     gum
+    vhs
     libxml2
     jansson
     meson
