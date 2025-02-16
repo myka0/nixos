@@ -36,10 +36,10 @@
 
     systemd.services.asusd = {
       serviceConfig = {
-        ExecStart = ["" "${pkgs.unstable.asusctl}/bin/asusd"];
+        ExecStart = ["" "${pkgs.asusctl}/bin/asusd"];
       };
     };
 
-    environment.systemPackages = with pkgs.unstable; [asusctl];
+    environment.systemPackages = with pkgs; [asusctl];
   };
 }
