@@ -20,9 +20,9 @@
       };
     };
 
-    services.supergfxd.enable = true;
     systemd.services.supergfxd.path = [pkgs.kmod pkgs.pciutils];
     services = {
+      supergfxd.enable = true;
       asusd = {
         enable = true;
         enableUserService = true;
