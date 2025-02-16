@@ -35,6 +35,6 @@ read -r gen_number gen_date gen_time <<< "$current_gen"
 # Commit changes
 commit_message="Generation $gen_number $gen_date $gen_time"
 git commit -am "$commit_message"
-git push
+git push &>/dev/null
 
 popd >/dev/null

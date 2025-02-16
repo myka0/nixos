@@ -178,10 +178,9 @@
       hyprpaper
       hyprpolkitagent
       hyprpicker
-      dunst
+      hyprshot
       libnotify
-      slurp
-      grim
+      swaynotificationcenter
       wl-clipboard
       brightnessctl
       wev
