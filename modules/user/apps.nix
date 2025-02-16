@@ -45,6 +45,7 @@
     openssl
 
     # Utils
+    libsecret
     gparted
     gnome-tweaks
     gnome-disk-utility

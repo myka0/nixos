@@ -1,33 +1,40 @@
-#!/bin/bash
-
-set -e
-pushd ~/nixos/ > /dev/null
+#!/usr/bin/env bash
+set -euo pipefail
+pushd ~/nixos/ >/dev/null
 
 nvim
+
+# Format Nix files
 alejandra . &>/dev/null
 
+# Show changes
 git diff -U0 --color=always | gum pager
-nix flake update
 
 sudo -v
-sudo nixos-rebuild switch --flake ~/nixos/#default &>nixos-switch.log & PID=$! || (
-  cat nixos-switch.log | grep --color error && false
-)
 
-gum spin -s minidot --title "Rebuilding NixOS..." -- bash -c "
-  while kill -0 $PID 2>/dev/null; do
-    sleep 1
-  done
-"
+# Update flake
+nix flake update &>/dev/null & update_pid=$!
+gum spin -s minidot --title "Updating NixOS..." -- \
+  bash -c "tail --pid=$update_pid -f /dev/null"
 
-current_gen=$(nixos-rebuild list-generations | grep current)
-gen_number=$(echo "$current_gen" | awk '{print $1}')
-gen_date=$(echo "$current_gen" | awk '{print $3}')
-gen_time=$(echo "$current_gen" | awk '{print $4}')
+# Rebuild system
+sudo nixos-rebuild switch --flake ~/nixos/#default &>nixos-switch.log & rebuild_pid=$!
+gum spin -s minidot --title "Rebuilding NixOS..." -- \
+  bash -c "tail --pid=$rebuild_pid -f /dev/null"
 
+# Error handling
+wait "$rebuild_pid" || {
+  grep --color -A 25 'error:' nixos-switch.log
+  exit 1
+}
+
+# Get generation info
+current_gen=$(nixos-rebuild list-generations | awk '/current/ {print $1, $3, $4}')
+read -r gen_number gen_date gen_time <<< "$current_gen"
+
+# Commit changes
 commit_message="Generation $gen_number $gen_date $gen_time"
-
 git commit -am "$commit_message"
 git push
 
-popd > /dev/null
+popd >/dev/null

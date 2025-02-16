@@ -4,7 +4,7 @@
   ...
 }: {
   boot = {
-    kernelPackages = pkgs.linuxKernel.kernels.linux_6_12;
+    kernelPackages = pkgs.linuxPackages_6_12;
 
     loader = {
       efi = {
