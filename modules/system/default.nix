@@ -5,7 +5,6 @@
     ./fish.nix
     ./fonts.nix
     ./gnome.nix
-    ./gnupg.nix
     ./greeter.nix
     ./polkit.nix
     ./sound.nix

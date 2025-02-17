@@ -1,6 +1,8 @@
 {
   imports = [./auto-cpufreq.nix ./asusctl.nix ./boot.nix ./nvidia.nix ./vfio.nix];
 
+  programs.ssh.startAgent = true;
+
   security.rtkit.enable = true;
 
   networking = {
