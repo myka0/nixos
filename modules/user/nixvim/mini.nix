@@ -36,8 +36,11 @@
         require('mini.pairs').setup()
         require('mini.bracketed').setup()
         require('mini.trailspace').setup()
+        require('mini.cursorword').setup({
+          delay = 0,
+        })
         require('mini.indentscope').setup({
-          delay = 50,
+          delay = 0,
         })
 
         local hipatterns = require('mini.hipatterns')

@@ -6,6 +6,19 @@
 }: {
   config = lib.mkIf config.nixvim.enable {
     programs.nixvim = {
+      highlightOverride = {
+        CurrentWord = {
+          bg = null;
+          underline = true;
+        };
+
+        MiniStarterQuery.fg = "#fb4934";
+        MiniStarterHeader.fg = "#699D6A";
+        MiniStarterFooter.fg = "#B16286";
+        MiniStarterSection.fg = "#fe8019";
+        MiniStarterItemPrefix.fg = "#458588";
+      };
+
       colorscheme = "gruvbox-material";
 
       extraPlugins = with pkgs; [vimPlugins.gruvbox-material];
