@@ -42,6 +42,8 @@
     udisks
     texliveFull
     cowsay
+    cbonsai
+    asciiquarium
     openssl
 
     # Utils
