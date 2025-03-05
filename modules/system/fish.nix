@@ -6,6 +6,7 @@
       ll = "ls -l";
       nixos-test = "sudo nixos-rebuild test --flake ~/nixos/#default";
       fetch = "neowofetch";
+      botany = "python3 ~/botany/botany.py";
     };
   };
 
