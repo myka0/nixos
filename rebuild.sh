@@ -12,11 +12,6 @@ git diff -U0 --color=always | gum pager
 
 sudo -v
 
-# Update flake
-nix flake update &>/dev/null & update_pid=$!
-gum spin -s minidot --title "Updating NixOS..." -- \
-  bash -c "tail --pid=$update_pid -f /dev/null"
-
 # Rebuild system
 sudo nixos-rebuild switch --flake ~/nixos/#default &>nixos-switch.log & rebuild_pid=$!
 gum spin -s minidot --title "Rebuilding NixOS..." -- \
