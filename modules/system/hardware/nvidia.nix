@@ -8,10 +8,10 @@
   config = lib.mkIf config.nvidia.enable {
     services.xserver.videoDrivers = ["nvidia"];
     hardware.nvidia = {
-      package = config.boot.kernelPackages.nvidiaPackages.production;
+      package = config.boot.kernelPackages.nvidiaPackages.stable;
       modesetting.enable = true;
       powerManagement.finegrained = true;
-      nvidiaSettings = false;
+      nvidiaSettings = true;
       open = true;
       prime = {
         offload = {
