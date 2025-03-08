@@ -6,17 +6,21 @@
       mainBar = {
         layer = "top";
         position = "top";
-        height = 10;
+        height = 24;
         margin-bottom = 0;
         margin-top = 0;
 
-        modules-left = ["temperature" "cpu" "memory" "network" "mpd" "hyprland/window"];
+        modules-left = ["custom/icon" "temperature" "cpu" "memory" "network" "mpd"];
 
         modules-center = ["hyprland/workspaces"];
 
         modules-right = ["tray" "pulseaudio" "backlight" "battery" "clock"];
 
         # Left Modules
+        "custom/icon" = {
+          format = " ";
+        };
+
         temperature = {
           interval = 10;
           thermal-zone = 7;
@@ -43,16 +47,12 @@
         };
 
         network = {
-          interval = 2;
+          format-disconnected = "󰖪 0% ";
+          format-ethernet = "󰈀 100% ";
+          format-linked = "{ifname} (No IP)";
           format-wifi = "  {signalStrength}%";
-          format-ethernet = "";
-          format-linked = " {ipaddr}";
-          format-disconnected = " Disconnected";
-          format-disabled = "";
-          tooltip = false;
-          max-length = 20;
-          min-length = 6;
-          format-alt = "{essid}";
+          tooltip-format = "Connected to {essid} {ifname} via {gwaddr}";
+          on-click = "kitty nmtui";
         };
 
         mpd = {
@@ -83,8 +83,14 @@
 
         # Middle Modules
         "hyprland/workspaces" = {
-          sort-by-name = true;
+          all-outputs = false;
           on-click = "activate";
+          format = "{icon}";
+          format-icons = {
+            urgent = "";
+            active = "";
+            default = "";
+          };
         };
 
         "hyprland/window" = {
@@ -148,53 +154,82 @@
     style = ''
       * {
         font-family: JetBrainsMono;
-        font-size: 13px;
         min-height: 0;
         color: white;
       }
 
       window#waybar {
-        background-color: rgba(20, 20, 20, 0.8);
+        background-color: rgba(18, 18, 18, 0.5);
       }
 
       #workspaces {
-        margin-top: 3px;
-        margin-bottom: 3px;
-        margin-right: 10px;
-        margin-left: 25px;
+        background: #1D1D1D;
+        margin: 8px 4px;
+        padding: 8px 4px;
+        border-radius: 16px;
+        font-size: 2px;
       }
 
       #workspaces button {
-        border-radius: 8px;
-        margin-right: 8px;
-        padding: 1px 10px;
-        font-weight: bolder;
-        background-color: #272727;
+        font-weight: bold;
+        font-size: 2px;
+        padding: 2px 0px;
+        margin: 0px 12px;
+        border-radius: 16px;
+        min-width: 8px;
+        background: #2F2F2F;
+        transition: all 0.3s ease-in-out;
       }
 
-      #workspaces button.active, #workspaces button.focused {
-        padding: 0 10px;
-        /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
-        background: #6791C9;
+      #workspaces button.active {
+        font-weight: bold;
+        font-size: 2px;
+        background-color: #6791C9;
+        border-radius: 16px;
+        min-width: 32px;
+        background-size: 400% 400%;
+        transition: all 0.3s ease-in-out;
+      }
+
+      #custom-icon {
+        color: #6791C9;
+        background: #1D1D1D;
+        margin: 0px 5px 0px 0px;
+        padding: 0px 20px 0px 8px;
+        border-radius: 0px 0px 40px 0px;
+        font-size: 24px;
       }
 
       #tray,
+      #backlight,
+      #pulseaudio,
+      #battery {
+        background-color: #1D1D1D;
+        border-radius: 10px 24px 10px 24px;
+        padding: 0 20px;
+        margin: 4px 0px 4px 7px;
+        font-size: 13px;
+      }
+
       #mpd,
-      #custom-weather,
       #cpu,
       #temperature,
       #memory,
-      #sway-mode,
-      #backlight,
-      #pulseaudio,
-      #custom-vpn,
-      #disk,
-      #custom-recorder,
-      #custom-audiorec,
-      #battery,
-      #clock,
       #network {
-      	padding: 0 12px;
+        background-color: #1D1D1D;
+        border-radius: 24px 10px 24px 10px;
+        padding: 0 20px;
+        margin: 4px 7px 4px 0px;
+        font-size: 13px;
+      }
+
+      #clock {
+        background: #1D1D1D;
+        border-radius: 0px 0px 0px 40px;
+        padding: 0px 10px 0px 25px;
+        margin-left: 7px;
+        font-weight: bold;
+        font-size: 13px;
       }
 
       #memory.warning,

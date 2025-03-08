@@ -18,6 +18,9 @@
     wayland.windowManager.hyprland = {
       enable = true;
       xwayland.enable = true;
+      plugins = with pkgs; [
+        hyprlandPlugins.hyprsplit
+      ];
 
       settings = {
         input = {
@@ -43,15 +46,24 @@
           allow_tearing = false;
         };
 
+        plugin = {
+          hyprsplit = {
+            num_workspaces = 10;
+            persistent_workspaces = true;
+          };
+        };
+
         decoration = {
           rounding = 8;
 
           blur = {
-            enabled = false;
-            size = 1;
-            passes = 4;
+            enabled = true;
+            size = 3;
+            passes = 5;
             new_optimizations = true;
-            xray = true;
+            ignore_opacity = true;
+            xray = false;
+            popups = true;
           };
 
           shadow = {
@@ -86,6 +98,8 @@
         animation = borderangle, 1, 8, default
         animation = fade, 1, 7, default
         animation = workspaces, 1, 6, default
+
+        layerrule = blur, waybar
 
         $mainMod = SUPER
 
@@ -122,28 +136,28 @@
         bind = $mainMod, down, movefocus, d
 
         # Switch workspaces
-        bind = $mainMod, 1, workspace, 1
-        bind = $mainMod, 2, workspace, 2
-        bind = $mainMod, 3, workspace, 3
-        bind = $mainMod, 4, workspace, 4
-        bind = $mainMod, 5, workspace, 5
-        bind = $mainMod, 6, workspace, 6
-        bind = $mainMod, 7, workspace, 7
-        bind = $mainMod, 8, workspace, 8
-        bind = $mainMod, 9, workspace, 9
-        bind = $mainMod, 0, workspace, 10
+        bind = SUPER, 1, split:workspace, 1
+        bind = SUPER, 2, split:workspace, 2
+        bind = SUPER, 3, split:workspace, 3
+        bind = SUPER, 4, split:workspace, 4
+        bind = SUPER, 5, split:workspace, 5
+        bind = SUPER, 6, split:workspace, 6
+        bind = SUPER, 7, split:workspace, 7
+        bind = SUPER, 8, split:workspace, 8
+        bind = SUPER, 9, split:workspace, 9
+        bind = SUPER, 0, split:workspace, 10
 
         # Move active window to a workspace
-        bind = $mainMod SHIFT, 1, movetoworkspace, 1
-        bind = $mainMod SHIFT, 2, movetoworkspace, 2
-        bind = $mainMod SHIFT, 3, movetoworkspace, 3
-        bind = $mainMod SHIFT, 4, movetoworkspace, 4
-        bind = $mainMod SHIFT, 5, movetoworkspace, 5
-        bind = $mainMod SHIFT, 6, movetoworkspace, 6
-        bind = $mainMod SHIFT, 7, movetoworkspace, 7
-        bind = $mainMod SHIFT, 8, movetoworkspace, 8
-        bind = $mainMod SHIFT, 9, movetoworkspace, 9
-        bind = $mainMod SHIFT, 0, movetoworkspace, 10
+        bind = SUPER SHIFT, 1, split:movetoworkspacesilent, 1
+        bind = SUPER SHIFT, 2, split:movetoworkspacesilent, 2
+        bind = SUPER SHIFT, 3, split:movetoworkspacesilent, 3
+        bind = SUPER SHIFT, 4, split:movetoworkspacesilent, 4
+        bind = SUPER SHIFT, 5, split:movetoworkspacesilent, 5
+        bind = SUPER SHIFT, 6, split:movetoworkspacesilent, 6
+        bind = SUPER SHIFT, 7, split:movetoworkspacesilent, 7
+        bind = SUPER SHIFT, 8, split:movetoworkspacesilent, 8
+        bind = SUPER SHIFT, 9, split:movetoworkspacesilent, 9
+        bind = SUPER SHIFT, 0, split:movetoworkspacesilent, 10
 
         # Special workspaces
         bind = $mainMod, N, togglespecialworkspace, magic
@@ -159,6 +173,7 @@
 
         # Launch services
         exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+        exec-once = hyprpm reload -n
         exec-once = systemctl --user start hyprpolkitagent
         exec-once = hyprpaper
         exec-once = nm-applet --indicator
