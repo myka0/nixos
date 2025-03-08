@@ -48,7 +48,7 @@
 
         plugin = {
           hyprsplit = {
-            num_workspaces = 10;
+            num_workspaces = 7;
             persistent_workspaces = true;
           };
         };
@@ -100,6 +100,7 @@
         animation = workspaces, 1, 6, default
 
         layerrule = blur, waybar
+        layerrule = blur, wofi
 
         $mainMod = SUPER
 

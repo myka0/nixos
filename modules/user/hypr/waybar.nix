@@ -163,7 +163,7 @@
       }
 
       #workspaces {
-        background: #1D1D1D;
+        background: rgba(29, 29, 29, 0.6);
         margin: 8px 4px;
         padding: 8px 4px;
         border-radius: 16px;
@@ -193,7 +193,7 @@
 
       #custom-icon {
         color: #6791C9;
-        background: #1D1D1D;
+        background: rgba(29, 29, 29, 0.6);
         margin: 0px 5px 0px 0px;
         padding: 0px 20px 0px 8px;
         border-radius: 0px 0px 40px 0px;
@@ -204,7 +204,7 @@
       #backlight,
       #pulseaudio,
       #battery {
-        background-color: #1D1D1D;
+        background-color: rgba(29, 29, 29, 0.6);
         border-radius: 10px 24px 10px 24px;
         padding: 0 20px;
         margin: 4px 0px 4px 7px;
@@ -216,7 +216,7 @@
       #temperature,
       #memory,
       #network {
-        background-color: #1D1D1D;
+        background-color: rgba(29, 29, 29, 0.6);
         border-radius: 24px 10px 24px 10px;
         padding: 0 20px;
         margin: 4px 7px 4px 0px;
@@ -224,7 +224,7 @@
       }
 
       #clock {
-        background: #1D1D1D;
+        background: rgba(29, 29, 29, 0.6);
         border-radius: 0px 0px 0px 40px;
         padding: 0px 10px 0px 25px;
         margin-left: 7px;

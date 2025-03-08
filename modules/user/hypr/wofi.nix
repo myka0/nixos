@@ -35,7 +35,7 @@
       window {
           margin: 0px;
           border: 2px solid #6791C9;
-          background-color: #1D2021;
+          background-color: rgba(18, 18, 18, 0.5);
           border-radius: 12px;
       }
 
@@ -46,7 +46,7 @@
           border: #595959 2px solid;
           color: #F2F4F5;
           font-weight: bold;
-          background: #252829;
+          background: rgba(29, 29, 29, 0.6);
           outline: none;
           border-radius: 16px;
       }
@@ -120,7 +120,7 @@
           padding-left: 8px;
           border: 2px solid #6791C9;
           border-radius: 16px;
-          background: #252829;
+          background: rgba(29, 29, 29, 0.6);
       }
     '';
   };
