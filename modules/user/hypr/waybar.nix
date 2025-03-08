@@ -6,7 +6,7 @@
       mainBar = {
         layer = "top";
         position = "top";
-        height = 24;
+        height = 34;
         margin-bottom = 0;
         margin-top = 0;
 
@@ -111,14 +111,11 @@
           format-bluetooth-muted = " {format_source}";
           format-muted = "  {format_source}";
           format-source = "  {volume}%";
-          format-source-muted = "";
+          format-source-muted = " ";
           format-icons = {
             headphone = " ";
-            headset = "🎧";
-            phone = "";
-            portable = "";
-            car = "";
-            default = ["" "" ""];
+            headset = " ";
+            default = ["" " " " "];
           };
         };
 
@@ -163,9 +160,9 @@
       }
 
       #workspaces {
-        background: rgba(29, 29, 29, 0.6);
-        margin: 8px 4px;
-        padding: 8px 4px;
+        background: #202020;
+        margin: 6px 4px;
+        padding: 7px 4px;
         border-radius: 16px;
         font-size: 2px;
       }
@@ -177,7 +174,7 @@
         margin: 0px 12px;
         border-radius: 16px;
         min-width: 8px;
-        background: #2F2F2F;
+        background: #2C2C2C;
         transition: all 0.3s ease-in-out;
       }
 
@@ -193,7 +190,7 @@
 
       #custom-icon {
         color: #6791C9;
-        background: rgba(29, 29, 29, 0.6);
+        background: #202020;
         margin: 0px 5px 0px 0px;
         padding: 0px 20px 0px 8px;
         border-radius: 0px 0px 40px 0px;
@@ -204,11 +201,11 @@
       #backlight,
       #pulseaudio,
       #battery {
-        background-color: rgba(29, 29, 29, 0.6);
+        background-color: #202020;
         border-radius: 10px 24px 10px 24px;
         padding: 0 20px;
-        margin: 4px 0px 4px 7px;
-        font-size: 13px;
+        margin: 3px 0px 3px 5px;
+        font-size: 14px;
       }
 
       #mpd,
@@ -216,20 +213,20 @@
       #temperature,
       #memory,
       #network {
-        background-color: rgba(29, 29, 29, 0.6);
+        background-color: #202020;
         border-radius: 24px 10px 24px 10px;
         padding: 0 20px;
-        margin: 4px 7px 4px 0px;
-        font-size: 13px;
+        margin: 3px 5px 3px 0px;
+        font-size: 14px;
       }
 
       #clock {
-        background: rgba(29, 29, 29, 0.6);
+        background: #202020;
         border-radius: 0px 0px 0px 40px;
         padding: 0px 10px 0px 25px;
-        margin-left: 7px;
+        margin: 0px 0px 0px 5px;
         font-weight: bold;
-        font-size: 13px;
+        font-size: 14px;
       }
 
       #memory.warning,
