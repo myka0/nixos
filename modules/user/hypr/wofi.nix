@@ -46,7 +46,7 @@
           border: #595959 2px solid;
           color: #F2F4F5;
           font-weight: bold;
-          background: rgba(29, 29, 29, 0.6);
+          background: #202020;
           outline: none;
           border-radius: 16px;
       }
@@ -120,7 +120,7 @@
           padding-left: 8px;
           border: 2px solid #6791C9;
           border-radius: 16px;
-          background: rgba(29, 29, 29, 0.6);
+          background: #202020;
       }
     '';
   };
