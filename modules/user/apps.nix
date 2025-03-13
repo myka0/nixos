@@ -32,6 +32,7 @@
     wget
     curl
     zip
+    tldr
     unzip
     hyfetch
     btop
