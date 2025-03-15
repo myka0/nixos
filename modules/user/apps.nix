@@ -23,6 +23,7 @@
     libreoffice
     krita
     obsidian
+    audacity
     via
     anki
     kicad
