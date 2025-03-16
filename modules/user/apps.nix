@@ -12,6 +12,7 @@
     spotify
     gimp
     vlc
+    waydroid
     moonlight-qt
     zoom-us
     blender
