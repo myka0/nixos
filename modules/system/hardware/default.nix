@@ -5,6 +5,8 @@
 
   security.rtkit.enable = true;
 
+  virtualisation.waydroid.enable = true;
+
   networking = {
     networkmanager.enable = true;
     firewall.enable = true;
