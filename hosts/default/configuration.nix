@@ -49,9 +49,9 @@
   auto-cpufreq.enable = true;
   asusctl.enable = true;
   gnome.enable = false;
-  nvidia.enable = true;
+  nvidia.enable = false;
   steam.enable = true;
-  vfio.enable = false;
+  vfio.enable = true;
 
   # Run unpatched dynamic binaries
   programs.nix-ld.enable = true;
