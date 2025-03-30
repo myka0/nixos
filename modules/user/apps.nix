@@ -34,6 +34,7 @@
     wget
     curl
     zip
+    p7zip
     tldr
     unzip
     hyfetch
