@@ -91,6 +91,9 @@
             active = "";
             default = "";
           };
+          persistent-workspaces = {
+            "*" = 7;
+          };
         };
 
         "hyprland/window" = {
@@ -172,9 +175,10 @@
         font-size: 2px;
         padding: 2px 0px;
         margin: 0px 12px;
+        background-color: #6791C9;
         border-radius: 16px;
-        min-width: 8px;
-        background: #2C2C2C;
+        min-width: 16px;
+        background-size: 400% 400%;
         transition: all 0.3s ease-in-out;
       }
 
@@ -185,6 +189,15 @@
         border-radius: 16px;
         min-width: 32px;
         background-size: 400% 400%;
+        transition: all 0.3s ease-in-out;
+      }
+
+      #workspaces button.empty {
+        font-weight: bold;
+        font-size: 2px;
+        border-radius: 16px;
+        min-width: 8px;
+        background-color: #2C2C2C;
         transition: all 0.3s ease-in-out;
       }
 
