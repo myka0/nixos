@@ -7,6 +7,7 @@
 }: {
   imports = [
     inputs.nixvim.homeManagerModules.nixvim
+    ./avante.nix
     ./cmp.nix
     ./keymaps.nix
     ./lsp.nix

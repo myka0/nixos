@@ -177,24 +177,24 @@
         margin: 0px 12px;
         background-color: #6791C9;
         border-radius: 16px;
-        min-width: 16px;
-        background-size: 400% 400%;
+        min-width: 12px;
         transition: all 0.3s ease-in-out;
       }
 
       #workspaces button.active {
         font-weight: bold;
         font-size: 2px;
+        margin: 0px 8px;
         background-color: #6791C9;
         border-radius: 16px;
         min-width: 32px;
-        background-size: 400% 400%;
         transition: all 0.3s ease-in-out;
       }
 
       #workspaces button.empty {
         font-weight: bold;
         font-size: 2px;
+        margin: 0px 16px;
         border-radius: 16px;
         min-width: 8px;
         background-color: #2C2C2C;

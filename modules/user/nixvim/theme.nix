@@ -7,6 +7,8 @@
   config = lib.mkIf config.nixvim.enable {
     programs.nixvim = {
       highlightOverride = {
+        lualine_c_buffers_active.underline = true;
+
         CurrentWord = {
           bg = null;
           underline = true;
