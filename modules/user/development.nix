@@ -12,6 +12,7 @@
     libxml2
     jansson
     meson
+    maven
     cmake
     gnumake
     libcap
