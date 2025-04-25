@@ -12,6 +12,7 @@
     spotify
     gimp
     vlc
+    lutris
     waydroid
     moonlight-qt
     zoom-us
