@@ -15,6 +15,7 @@
     lutris
     wineWowPackages.waylandFull
     winetricks
+    dxvk
     waydroid
     moonlight-qt
     zoom-us
