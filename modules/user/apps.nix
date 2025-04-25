@@ -13,6 +13,8 @@
     gimp
     vlc
     lutris
+    wineWowPackages.waylandFull
+    winetricks
     waydroid
     moonlight-qt
     zoom-us
