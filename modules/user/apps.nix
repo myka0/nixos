@@ -22,7 +22,7 @@
     gimp
     vlc
     lutris
-    unstable.wineWow64Packages.waylandFull
+    unstable.wineWowPackages.waylandFull
     waydroid
     moonlight-qt
     zoom-us
