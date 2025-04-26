@@ -3,15 +3,6 @@
   inputs,
   ...
 }: {
-  nixpkgs.config = {
-    packageOverrides = pkgs: {
-      unstable = import inputs.nixpkgs-unstable {
-        inherit (pkgs) system;
-        config.allowUnfree = true;
-      };
-    };
-  };
-
   home.packages = with pkgs; [
     # GUI Apps
     inputs.zen-browser.packages.x86_64-linux.default
@@ -22,7 +13,7 @@
     gimp
     vlc
     lutris
-    unstable.wineWowPackages.waylandFull
+    wineWowPackages.waylandFull
     waydroid
     moonlight-qt
     zoom-us
