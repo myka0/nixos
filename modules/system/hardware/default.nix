@@ -7,6 +7,7 @@
 
   virtualisation.waydroid.enable = true;
 
+  systemd.services."NetworkManager-wait-online".enable = false;
   networking = {
     networkmanager.enable = true;
     firewall.enable = true;
