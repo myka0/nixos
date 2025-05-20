@@ -16,6 +16,7 @@
           volar.enable = true;
           tailwindcss.enable = true;
           pylsp.enable = true;
+          jdtls.enable = true;
 
           lua_ls = {
             enable = true;
