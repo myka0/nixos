@@ -33,6 +33,9 @@
       ];
 
       extraModprobeConfig = ''
+        options kvm_intel nested=1
+        options kvm_intel emulate_invalid_guest_state=0
+        options kvm ignore_msrs=1 report_ignored_msrs=0
         options vfio-pci ids=10de:2860,10de:22bd
         softdep nouveau pre: vfio-pci
         softdep nvidia pre: vfio-pci

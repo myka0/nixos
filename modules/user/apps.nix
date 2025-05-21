@@ -44,6 +44,7 @@
     qmk
     gay
     blahaj
+    dmg2img
     woeusb
     udisks
     texliveFull
