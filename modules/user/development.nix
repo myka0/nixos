@@ -32,6 +32,7 @@
     rustup
     uncrustify
     astyle
+    postgresql
     go
     nodejs
     gcc
