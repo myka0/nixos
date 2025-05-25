@@ -39,6 +39,8 @@
 
     # Lid Switch
     logind.lidSwitch = "ignore";
+
+    postgresql.enable = true;
   };
 
   services.xserver = {
