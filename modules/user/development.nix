@@ -27,7 +27,7 @@
 
     # Languages
     alejandra
-    treefmt2
+    treefmt
     rustc
     rustup
     uncrustify
