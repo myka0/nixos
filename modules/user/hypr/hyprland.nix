@@ -201,8 +201,8 @@
       wl-clipboard
       brightnessctl
       wev
-      xwaylandvideobridge
       xdg-desktop-portal-hyprland
+      kdePackages.xwaylandvideobridge
     ];
   };
 }

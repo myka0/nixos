@@ -43,7 +43,7 @@
     python3
 
     # Editors
-    kate
+    kdePackages.kate
     jetbrains.pycharm-community
     jetbrains.rider
     vscodium

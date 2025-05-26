@@ -2,7 +2,7 @@
   environment.systemPackages = with pkgs; [fontconfig];
 
   fonts.packages = with pkgs; [
-    nerdfonts
+    nerd-fonts.jetbrains-mono
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-emoji

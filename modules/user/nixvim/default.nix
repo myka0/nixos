@@ -55,6 +55,7 @@
         neoscroll.enable = true;
         hardtime.enable = true;
         luasnip.enable = true;
+        jdtls.enable = true;
         oil.enable = true;
 
         telescope = {
@@ -75,11 +76,6 @@
         treesitter = {
           enable = true;
           settings.highlight.enable = true;
-        };
-
-        nvim-jdtls = {
-          enable = true;
-          data = "/home/myka";
         };
 
         lspsaga = {
