@@ -53,7 +53,7 @@
         enable = true;
         qemu = {
           ovmf.enable = true;
-          package = pkgs.old.qemu_kvm;
+          package = pkgs.qemu_kvm;
           runAsRoot = true;
           swtpm.enable = true;
         };
@@ -66,7 +66,7 @@
       qemu_full
       qemu_kvm
       quickemu
-      old.quickgui
+      quickgui
       OVMFFull
       swtpm
       dnsmasq
