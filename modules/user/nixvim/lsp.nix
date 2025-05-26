@@ -8,6 +8,7 @@
     programs.nixvim = {
       plugins.lsp = {
         enable = true;
+        inlayHints = true;
 
         servers = {
           clangd.enable = true;
@@ -23,6 +24,16 @@
             settings.telemetry.enable = false;
           };
         };
+
+        luaConfig.post = ''
+          vim.diagnostic.config({
+            virtual_text = true,
+            signs = true,
+            underline = true,
+            update_in_insert = false,
+            severity_sort = true,
+          })
+        '';
       };
     };
   };

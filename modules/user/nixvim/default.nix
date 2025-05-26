@@ -55,7 +55,6 @@
         neoscroll.enable = true;
         hardtime.enable = true;
         luasnip.enable = true;
-        jdtls.enable = true;
         oil.enable = true;
 
         telescope = {
@@ -67,6 +66,18 @@
             media-files.enable = true;
             undo.enable = true;
           };
+        };
+
+        jdtls = {
+          enable = true;
+          autoLoad = true;
+          settings.cmd = [
+            "java"
+            "-data"
+            "/home/myka"
+            "-configuration"
+            "/home/myka"
+          ];
         };
 
         snacks = {
