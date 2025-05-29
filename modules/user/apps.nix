@@ -31,6 +31,7 @@
     anki
     kicad
     openscad
+    dmenu
 
     # TUI Apps
     wget
@@ -51,7 +52,9 @@
     cowsay
     cbonsai
     asciiquarium
+    spring-boot-cli
     openssl
+    dysk
 
     # Utils
     libsecret
