@@ -54,7 +54,7 @@
         };
 
         decoration = {
-          rounding = 8;
+          rounding = 0;
 
           blur = {
             enabled = true;
@@ -113,7 +113,7 @@
         bind = $mainMod, R, exec, wofi
         bind = $mainMod, P, pseudo, # dwindle
         bind = $mainMod, J, togglesplit, # dwindle
-        bind = $mainMod, B, exec, zen
+        bind = $mainMod, B, exec, qutebrowser
         bind = $mainMod, S, exec, hyprshot -m region -f screenshot.png
         bind = $mainMod SHIFT, S, exec, hyprshot -m window -f screenshot.png
         bind = $mainMod SHIFT, X, exec, hyprpicker -an
