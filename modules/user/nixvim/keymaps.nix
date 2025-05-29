@@ -55,6 +55,10 @@
           key = "<leader>b";
         }
         {
+          action = "<cmd>Telescope undo<CR>";
+          key = "<leader>u";
+        }
+        {
           action = "<cmd>Telescope git_status<CR>";
           key = "<leader>gs";
         }
