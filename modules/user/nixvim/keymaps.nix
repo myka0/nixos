@@ -14,16 +14,18 @@
         }
         {
           action = "<cmd>bp<CR>";
-          key = "<C-[>";
+          key = "<S-Tab>";
         }
         {
           action = "<cmd>bn<CR>";
-          key = "<C-]>";
+          key = "<Tab>";
         }
         {
           action = "<cmd>bd<CR>";
           key = "<C-;>";
         }
+
+        # Telescope
         {
           action = "<cmd>Telescope find_files<CR>";
           key = "<leader>ff";
@@ -38,7 +40,31 @@
         }
         {
           action = "<cmd>Telescope spell_suggest<CR>";
-          key = "<leader>ss";
+          key = "<leader>s";
+        }
+        {
+          action = "<cmd>Telescope keymaps<CR>";
+          key = "<leader>k";
+        }
+        {
+          action = "<cmd>Telescope colorscheme<CR>";
+          key = "<leader>cs";
+        }
+        {
+          action = "<cmd>Telescope buffers<CR>";
+          key = "<leader>b";
+        }
+        {
+          action = "<cmd>Telescope git_status<CR>";
+          key = "<leader>gs";
+        }
+        {
+          action = "<cmd>Telescope git_commits<CR>";
+          key = "<leader>gc";
+        }
+        {
+          action = "<cmd>Telescope git_branches<CR>";
+          key = "<leader>gb";
         }
       ];
     };
