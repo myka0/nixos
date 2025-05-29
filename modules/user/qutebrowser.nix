@@ -141,6 +141,8 @@
         'DEFAULT': 'https://duckduckgo.com/?q={}',
         '!gh': 'https://github.com/search?o=desc&q={}&s=stars',
         '!yt': 'https://www.youtube.com/results?search_query={}',
+        '!np': 'https://search.nixos.org/packages?query={}',
+        '!hm': 'https://home-manager-options.extranix.com/?query={}',
       }
 
       config.set('colors.webpage.darkmode.enabled', False, 'file://*')

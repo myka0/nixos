@@ -44,6 +44,7 @@
           tooltip = false;
           warning = 10;
           critical = 90;
+          on-click = "kitty -e 'btop'";
         };
 
         network = {

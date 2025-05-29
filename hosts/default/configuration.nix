@@ -38,6 +38,7 @@
   home-manager = {
     extraSpecialArgs = {inherit inputs;};
     users = {"myka" = import ./home.nix;};
+    backupFileExtension = "backup";
   };
 
   programs.hyprland = {
@@ -91,8 +92,8 @@
     WLR_NO_HARDWARE_CURSORS = "1";
     NIXOS_OZONE_WL = "1";
     QT_DEBUG_PLUGINS = 1;
-    QT_QPA_PLATFORMTHEME = "qt5ct";
+    QT_QPA_PLATFORMTHEME = "qt6ct";
   };
 
-  system.stateVersion = "24.05";
+  system.stateVersion = "25.05";
 }

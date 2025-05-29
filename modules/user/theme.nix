@@ -1,10 +1,10 @@
 {pkgs, ...}: {
   # QT Themes
-  systemd.user.sessionVariables.QT_QPA_PLATFORMTHEME = "qt5ct";
+  systemd.user.sessionVariables.QT_QPA_PLATFORMTHEME = "qt6ct";
   systemd.user.sessionVariables.QT_DEBUG_PLUGINS = 1;
-  nixpkgs.config.qt5 = {
+  nixpkgs.config.qt6 = {
     enable = true;
-    platformTheme = "qt5ct";
+    platformTheme = "qt6ct";
     style = {
       package = pkgs.utterly-nord-plasma;
       name = "Utterly-Nord-Plasma";
@@ -27,7 +27,11 @@
     gtk4
     orchis-theme
     layan-gtk-theme
-    libsForQt5.qt5ct
-    libsForQt5.qtstyleplugin-kvantum
+    catppuccin-kvantum
+    gruvbox-kvantum
+    rose-pine-kvantum
+    kdePackages.qt6ct
+    kdePackages.qtstyleplugin-kvantum
+    themechanger
   ];
 }
