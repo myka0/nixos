@@ -27,6 +27,8 @@
 
     keyBindings = {
       normal = {
+        "J" = "tab-prev";
+        "K" = "tab-next";
         "cs" = "cmd-set-text -s :config-source";
         "tt" = "config-cycle tabs.position top left";
         "th" = "config-cycle tabs.show multiple never";
