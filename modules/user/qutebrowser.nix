@@ -143,7 +143,7 @@
         '!yt': 'https://www.youtube.com/results?search_query={}',
         '!np': 'https://search.nixos.org/packages?query={}',
         '!hm': 'https://home-manager-options.extranix.com/?query={}',
-        '!nv': 'https://nix-community.github.io/nixvim',
+        '!nv': 'https://nix-community.github.io/nixvim/plugins/{}/index.html',
       }
 
       config.set('colors.webpage.darkmode.enabled', False, 'file://*')
