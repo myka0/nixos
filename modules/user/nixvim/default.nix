@@ -53,6 +53,7 @@
         cmp-buffer.enable = true;
         ts-autotag.enable = true;
         neoscroll.enable = true;
+        which-key.enable = true;
         hardtime.enable = true;
         luasnip.enable = true;
         oil.enable = true;
@@ -92,6 +93,7 @@
         lspsaga = {
           enable = true;
           ui.devicon = true;
+          lightbulb.enable = false;
         };
 
         none-ls = {

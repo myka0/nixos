@@ -9,10 +9,6 @@
 
       keymaps = [
         {
-          action = "<cmd>NvimTreeToggle<CR>";
-          key = "<C-n>";
-        }
-        {
           action = "<cmd>bp<CR>";
           key = "<S-Tab>";
         }
@@ -23,6 +19,30 @@
         {
           action = "<cmd>bd<CR>";
           key = "<C-;>";
+        }
+
+        # NvimTree
+        {
+          action = "<cmd>NvimTreeToggle<CR>";
+          key = "<C-n>";
+        }
+
+        # LspSaga
+        {
+          action = "<cmd>:Lspsaga code_action<CR>";
+          key = "<leader>la";
+        }
+        {
+          action = "<cmd>:Lspsaga rename<CR>";
+          key = "<leader>lr";
+        }
+        {
+          action = "<cmd>:Lspsaga finder<CR>";
+          key = "<leader>lf";
+        }
+        {
+          action = "<cmd>:Lspsaga outline<CR>";
+          key = "<leader>lo";
         }
 
         # Telescope
