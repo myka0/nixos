@@ -62,6 +62,7 @@
     gnome-tweaks
     gnome-disk-utility
     libsForQt5.kdeconnect-kde
+    xdg-utils
     protonup-qt
     syncthing
     xhosts

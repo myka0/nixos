@@ -9,5 +9,6 @@
     ./kitty.nix
     ./qutebrowser.nix
     ./theme.nix
+    ./xdg-mime.nix
   ];
 }
