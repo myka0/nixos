@@ -32,6 +32,8 @@
         "th" = "config-cycle tabs.show multiple never";
         "sh" = "config-cycle statusbar.show always never";
         "T" = "hint links tab";
+        "mm" = "bookmark-add";
+        "md" = "bookmark-del";
         "pP" = "open -- {primary}";
         "pp" = "open -- {clipboard}";
         "pt" = "open -t -- {clipboard}";
@@ -134,6 +136,8 @@
       hints.border = "#FFFFFF";
       auto_save.session = true;
       content.blocking.enabled = true;
+      content.autoplay = false;
+      downloads.remove_finished = 3000;
     };
 
     extraConfig = ''
