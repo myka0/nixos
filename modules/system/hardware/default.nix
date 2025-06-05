@@ -10,6 +10,7 @@
   systemd.services."NetworkManager-wait-online".enable = false;
   networking = {
     networkmanager.enable = true;
+    networkmanager.wifi.scanRandMacAddress = false;
     firewall.enable = true;
     hostName = "onyx";
   };
