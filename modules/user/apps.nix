@@ -22,6 +22,7 @@
     qbittorrent
     vesktop
     teams-for-linux
+    citrix_workspace
     ungoogled-chromium
     libreoffice
     krita
