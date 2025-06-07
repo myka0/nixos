@@ -21,7 +21,7 @@
   options = {nixvim.enable = lib.mkEnableOption "Enables Nixvim";};
 
   config = lib.mkIf config.nixvim.enable {
-    supermaven.enable = false;
+    supermaven.enable = true;
     programs.neovim.defaultEditor = true;
     programs.nixvim = {
       enable = true;
