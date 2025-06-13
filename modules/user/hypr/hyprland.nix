@@ -114,6 +114,7 @@
         bind = $mainMod, P, pseudo, # dwindle
         bind = $mainMod, J, togglesplit, # dwindle
         bind = $mainMod, B, exec, qutebrowser
+        bind = $mainMod SHIFT, F, exec, firefox
         bind = $mainMod, S, exec, hyprshot -m region -f screenshot.png
         bind = $mainMod SHIFT, S, exec, hyprshot -m window -f screenshot.png
         bind = $mainMod SHIFT, X, exec, hyprpicker -an
