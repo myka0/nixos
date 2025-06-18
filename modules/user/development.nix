@@ -34,6 +34,7 @@
     astyle
     postgresql
     go
+    golangci-lint
     nodejs
     gcc
     libgcc
