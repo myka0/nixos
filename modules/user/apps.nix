@@ -71,7 +71,6 @@
     xorg.libxkbfile
     ntfs3g
     nfs-utils
-    appimage-run
     nix-ld
     clinfo
     vulkan-tools
