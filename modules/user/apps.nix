@@ -20,6 +20,7 @@
     blender
     electrum
     qbittorrent
+    protonvpn-gui
     vesktop
     teams-for-linux
     citrix_workspace
