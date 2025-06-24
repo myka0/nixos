@@ -86,7 +86,7 @@
       };
 
       extraConfig = ''
-        monitor = eDP-1, 2560x1600, auto, 1
+        monitor = eDP-1, 2560x1600, 240, 1
         monitor = DP-1, 1920x1080@144, auto, 1
         monitor = DP-3, preferred, auto, 1
         monitor = DP-4, 1920x1080, auto, 1
