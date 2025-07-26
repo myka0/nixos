@@ -8,6 +8,7 @@
       globals.mapleader = " ";
 
       keymaps = [
+        # General
         {
           action = "<cmd>bp<CR>";
           key = "<S-Tab>";
@@ -25,6 +26,12 @@
         {
           action = "<cmd>NvimTreeToggle<CR>";
           key = "<C-n>";
+        }
+
+        # Gitsigns
+        {
+          action = "<cmd>:Gitsigns toggle_word_diff<CR>";
+          key = "<leader>gd";
         }
 
         # LspSaga

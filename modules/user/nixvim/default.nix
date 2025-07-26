@@ -55,6 +55,7 @@
         neoscroll.enable = true;
         which-key.enable = true;
         hardtime.enable = true;
+        gitsigns.enable = true;
         luasnip.enable = true;
         oil.enable = true;
 
