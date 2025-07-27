@@ -35,6 +35,7 @@
     postgresql
     go
     golangci-lint
+    delve
     nodejs
     gcc
     libgcc
