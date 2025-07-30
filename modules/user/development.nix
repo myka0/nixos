@@ -9,6 +9,7 @@
     gitlab-runner
     gum
     vhs
+    bruno
     libxml2
     jansson
     meson
