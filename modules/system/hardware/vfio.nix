@@ -61,16 +61,16 @@
     };
 
     environment.systemPackages = with pkgs; [
-      libvirt
-      virt-manager
-      qemu_full
-      qemu_kvm
-      quickemu
-      quickgui
-      OVMFFull
-      swtpm
-      dnsmasq
-      pciutils
+      old.libvirt
+      old.virt-manager
+      old.qemu_full
+      old.qemu_kvm
+      old.quickemu
+      old.quickgui
+      old.OVMFFull
+      old.swtpm
+      old.dnsmasq
+      old.pciutils
       old.looking-glass-client
     ];
   };
