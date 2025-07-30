@@ -71,7 +71,7 @@
       swtpm
       dnsmasq
       pciutils
-      looking-glass-client
+      old.looking-glass-client
     ];
   };
 }
