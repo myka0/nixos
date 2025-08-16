@@ -3,6 +3,15 @@
   inputs,
   ...
 }: {
+  nixpkgs.config = {
+    packageOverrides = pkgs: {
+      unstable = import inputs.nixpkgs-unstable {
+        inherit (pkgs) system;
+        config.allowUnfree = true;
+      };
+    };
+  };
+
   home.packages = with pkgs; [
     # GUI Apps
     inputs.zen-browser.packages.x86_64-linux.default
@@ -17,7 +26,7 @@
     waydroid
     moonlight-qt
     zoom-us
-    blender
+    unstable.blender
     electrum
     qbittorrent
     protonvpn-gui
