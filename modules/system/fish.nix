@@ -4,6 +4,8 @@
     enable = true;
     shellAliases = {
       ll = "ls -l";
+      rb = "~/nixos/rebuild.sh";
+      rbu = "~/nixos/rebuild-update.sh";
       nixos-test = "sudo nixos-rebuild test --flake ~/nixos/#default";
       fetch = "neowofetch";
       botany = "python3 ~/botany/botany.py";

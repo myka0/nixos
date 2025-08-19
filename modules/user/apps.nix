@@ -42,6 +42,7 @@
     anki
     kicad
     openscad
+    wireshark
     dmenu
 
     # TUI Apps
