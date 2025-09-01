@@ -34,6 +34,7 @@
     teams-for-linux
     citrix_workspace
     ungoogled-chromium
+    globalprotect-openconnect
     libreoffice
     krita
     obsidian
