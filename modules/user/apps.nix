@@ -18,7 +18,6 @@
     nemo-with-extensions
     kitty
     firefox
-    spotify
     gimp
     vlc
     lutris
@@ -63,7 +62,6 @@
     cowsay
     cbonsai
     asciiquarium
-    spicetify-cli
     openssl
     dysk
 

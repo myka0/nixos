@@ -8,6 +8,7 @@
     ./git.nix
     ./kitty.nix
     ./qutebrowser.nix
+    ./spicetify.nix
     ./theme.nix
     ./xdg-mime.nix
   ];
