@@ -31,8 +31,6 @@
     qbittorrent
     protonvpn-gui
     vesktop
-    teams-for-linux
-    citrix_workspace
     ungoogled-chromium
     globalprotect-openconnect
     libreoffice
@@ -65,7 +63,7 @@
     cowsay
     cbonsai
     asciiquarium
-    spring-boot-cli
+    spicetify-cli
     openssl
     dysk
 

@@ -7,6 +7,7 @@
     # Development Tools
     git
     gitlab-runner
+    spring-boot-cli
     gum
     vhs
     bruno
@@ -47,10 +48,7 @@
 
     # Editors
     kdePackages.kate
-    jetbrains.pycharm-community
-    jetbrains.rider
     vscodium
-    azuredatastudio
 
     # Hints
     ydotool
