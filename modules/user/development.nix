@@ -25,6 +25,7 @@
     devenv
     fuse3
     mesa
+    dos2unix
     libhugetlbfs
 
     # Languages
