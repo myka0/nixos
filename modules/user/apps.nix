@@ -34,6 +34,8 @@
     globalprotect-openconnect
     libreoffice
     krita
+    xf86_input_wacom
+    wacomtablet
     obsidian
     audacity
     via
