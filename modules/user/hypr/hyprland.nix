@@ -34,6 +34,11 @@
           sensitivity = 0.2;
         };
 
+        device = {
+          name = "wacom-intuos-pro-m-pen";
+          output = "DP-4";
+        };
+
         general = {
           gaps_in = 4;
           gaps_out = 8;
