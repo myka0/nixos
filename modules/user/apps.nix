@@ -64,6 +64,7 @@
     cowsay
     cbonsai
     asciiquarium
+    spotify-player
     openssl
     dysk
 

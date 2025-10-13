@@ -16,7 +16,7 @@
           ts_ls.enable = true;
           volar.enable = true;
           tailwindcss.enable = true;
-          pylsp.enable = true;
+          pyright.enable = true;
           jdtls.enable = true;
 
           lua_ls = {
