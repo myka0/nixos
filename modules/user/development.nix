@@ -44,13 +44,14 @@
     gcc
     libgcc
     libcxx
+    mpi
     racket
     jdk17
     python3
 
     # Editors
     kdePackages.kate
-    vscodium
+    vscode
 
     # Hints
     ydotool
