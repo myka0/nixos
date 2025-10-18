@@ -7,6 +7,7 @@
     # Development Tools
     git
     gitlab-runner
+    gotty
     spring-boot-cli
     godot
     gum
