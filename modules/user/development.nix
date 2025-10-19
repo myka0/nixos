@@ -29,6 +29,7 @@
     mesa
     dos2unix
     libhugetlbfs
+    nix-prefetch-github
 
     # Languages
     alejandra

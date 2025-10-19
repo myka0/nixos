@@ -33,6 +33,7 @@
     ungoogled-chromium
     globalprotect-openconnect
     libreoffice
+    aseprite
     krita
     xf86_input_wacom
     wacomtablet

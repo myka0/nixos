@@ -9,6 +9,7 @@
     inputs.nixvim.homeManagerModules.nixvim
     ./avante.nix
     ./cmp.nix
+    ./extra-plugins.nix
     ./keymaps.nix
     ./lsp.nix
     ./lualine.nix
