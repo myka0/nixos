@@ -50,6 +50,7 @@
     wget
     curl
     zip
+    ffmpeg
     p7zip
     tldr
     unzip
