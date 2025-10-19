@@ -51,6 +51,7 @@
     curl
     zip
     ffmpeg
+    slurp
     wf-recorder
     p7zip
     tldr
