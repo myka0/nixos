@@ -20,10 +20,25 @@ mkdir -p "$dir"
 
 wf-recorder -g "$geom" -r 60 -c libx264rgb -f "$dir"/"$out".mkv
 
+ffmpeg -i "$dir"/"$out.mkv" -vframes 1 "$dir"/"${out}_frame.png"
+
+mkv_size=$(du -h "$dir/$out.mkv" | cut -f1)
+notify-send "Recording finished" \
+  "Recorded to <i>${dir}/${out}.mkv.</i> (${mkv_size})" \
+  -i "$dir"/"$out"_frame.png
+
 ffmpeg -i "$dir/$out.mkv" -vf \
 "fps=30,split[s0][s1];
- [s0]palettegen=max_colors=72:stats_mode=single[p];
+ [s0]palettegen=max_colors=128:stats_mode=single[p];
  [s1][p]paletteuse=dither=none" \
 -gifflags +transdiff "$dir/$out.gif"
 
 gifsicle -O3 --lossy=50 -o "$dir"/"$out"_opt.gif "$dir"/"$out".gif
+printf 'file://%s\n' "$dir"/"$out"_opt.gif | wl-copy --type text/uri-list
+
+opt_size=$(du -h "$dir/$out"_opt.gif | cut -f1)
+notify-send "Optimized GIF generated" \
+  "GIF saved to <i>${dir}/${out}_opt.gif</i> (${opt_size}) and copied to clipboard." \
+  -i "$dir"/"$out"_frame.png
+
+rm "$dir"/"$out"_frame.png
