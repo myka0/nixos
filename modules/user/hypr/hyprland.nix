@@ -122,6 +122,9 @@
         bind = $mainMod SHIFT, F, exec, firefox
         bind = $mainMod, S, exec, hyprshot -m region -f screenshot.png
         bind = $mainMod SHIFT, S, exec, hyprshot -m window -f screenshot.png
+        bind = $mainMod, D, exec, record-region
+        bind = $mainMod SHIFT, D, exec, record-window
+        bind = $mainMod SHIFT CTRL, D, exec, pkill -INT wf-recorder
         bind = $mainMod SHIFT, X, exec, hyprpicker -an
 
         # System actions
@@ -204,10 +207,12 @@
       hyprpolkitagent
       hyprpicker
       hyprshot
+      hyprcursor
       libnotify
       swaynotificationcenter
       wl-clipboard
       brightnessctl
+      xcur2png
       wev
       xdg-desktop-portal-hyprland
       kdePackages.xwaylandvideobridge

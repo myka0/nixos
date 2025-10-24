@@ -2,6 +2,8 @@
   imports = [
     ./hypr
     ./nixvim
+    ./scripts
+    ./theme
 
     ./apps.nix
     ./development.nix
@@ -9,7 +11,6 @@
     ./kitty.nix
     ./qutebrowser.nix
     ./spicetify.nix
-    ./theme.nix
     ./xdg-mime.nix
   ];
 }

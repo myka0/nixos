@@ -4,6 +4,7 @@
   # Modules
   nixvim.enable = true;
   hyprland.enable = true;
+  teto-cursor.enable = true;
 
   home.username = "myka";
   home.homeDirectory = "/home/myka";
