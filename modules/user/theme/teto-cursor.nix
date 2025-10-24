@@ -27,7 +27,7 @@ in {
       package = tetoCursor;
       hyprcursor = {
         enable = true;
-        size = 64;
+        size = 32;
       };
     };
   };
