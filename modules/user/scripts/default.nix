@@ -1,5 +1,6 @@
 {pkgs, ...}: let
   scripts = {
+    remind = ./remind.sh;
     record-region = ./record-region.sh;
     record-window = ./record-window.sh;
   };
@@ -9,6 +10,8 @@
       inherit name;
       runtimeInputs = [
         pkgs.wf-recorder
+        pkgs.wl-clipboard
+        pkgs.libnotify
         pkgs.slurp
         pkgs.jq
         pkgs.ffmpeg
