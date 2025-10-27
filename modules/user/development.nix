@@ -22,7 +22,6 @@
     libcap
     zlib
     openblas
-    virtualbox
     vagrant
     ansible
     pkg-config
