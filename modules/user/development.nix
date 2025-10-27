@@ -22,6 +22,8 @@
     libcap
     zlib
     openblas
+    vagrant
+    ansible
     pkg-config
     virtualenv
     devenv
