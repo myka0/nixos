@@ -47,8 +47,9 @@
 
     systemd.tmpfiles.rules = ["f /dev/shm/looking-glass 0660 myka kvm -"];
 
-    virtualisation.spiceUSBRedirection.enable = true;
     virtualisation = {
+      spiceUSBRedirection.enable = true;
+
       libvirtd = {
         enable = true;
         qemu = {
@@ -57,6 +58,11 @@
           runAsRoot = true;
           swtpm.enable = true;
         };
+      };
+
+      virtualbox.host = {
+        enable = true;
+        enableExtensionPack = true;
       };
     };
 
