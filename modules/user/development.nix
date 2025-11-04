@@ -56,12 +56,5 @@
     # Editors
     kdePackages.kate
     vscode
-
-    # Hints
-    ydotool
-    pipx
-    cairo
-    gobject-introspection
-    gtk-layer-shell
   ];
 }

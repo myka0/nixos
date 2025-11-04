@@ -1,11 +1,11 @@
 {
   imports = [./auto-cpufreq.nix ./asusctl.nix ./boot.nix ./nvidia.nix ./vfio.nix];
 
+  swapDevices = [{device = "/swapfile";}];
+
   programs.ssh.startAgent = true;
 
   security.rtkit.enable = true;
-
-  virtualisation.waydroid.enable = true;
 
   systemd.services."NetworkManager-wait-online".enable = false;
   networking = {

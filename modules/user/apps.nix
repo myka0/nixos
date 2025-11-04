@@ -22,7 +22,6 @@
     vlc
     lutris
     wineWowPackages.waylandFull
-    waydroid
     moonlight-qt
     zoom-us
     unstable.blender
@@ -64,6 +63,7 @@
     dmg2img
     woeusb
     udisks
+    dust
     texliveFull
     cowsay
     cbonsai
@@ -76,7 +76,6 @@
     libsecret
     gparted
     gnome-tweaks
-    gnome-disk-utility
     libsForQt5.kdeconnect-kde
     xdg-utils
     protonup-qt
