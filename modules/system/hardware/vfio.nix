@@ -50,6 +50,8 @@
     virtualisation = {
       spiceUSBRedirection.enable = true;
 
+      docker.enable = true;
+
       libvirtd = {
         enable = true;
         qemu = {

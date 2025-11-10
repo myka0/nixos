@@ -11,7 +11,7 @@
   networking = {
     networkmanager.enable = true;
     networkmanager.wifi.scanRandMacAddress = false;
-    firewall.enable = true;
+    firewall.enable = false;
     hostName = "onyx";
   };
 

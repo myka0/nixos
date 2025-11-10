@@ -79,7 +79,7 @@
   users.users.myka = {
     isNormalUser = true;
     description = "myka";
-    extraGroups = ["networkmanager" "wheel" "vboxusers" "libvirtd" "jackaudio" "wireshark"];
+    extraGroups = ["networkmanager" "wheel" "vboxusers" "libvirtd" "jackaudio" "docker"];
   };
 
   environment.sessionVariables = {
