@@ -97,6 +97,42 @@
           action = "<cmd>Telescope git_branches<CR>";
           key = "<leader>gb";
         }
+
+        # GitConflict
+        {
+          action = "<cmd>GitConflictChooseOurs<CR>";
+          key = "<leader>co";
+        }
+        {
+          action = "<cmd>GitConflictChooseTheirs<CR>";
+          key = "<leader>ct";
+        }
+        {
+          action = "<cmd>GitConflictChooseBoth<CR>";
+          key = "<leader>cb";
+        }
+        {
+          action = "<cmd>GitConflictChooseNone<CR>";
+          key = "<leader>cn";
+        }
+        {
+          action = "<cmd>GitConflictNextConflict<CR>";
+          key = "<leader>nc";
+        }
+        {
+          action = "<cmd>GitConflictPrevConflict<CR>";
+          key = "<leader>pc";
+        }
+
+        # LazyGit
+        {
+          action = "<cmd>LazyGit<CR>";
+          key = "<leader>gg";
+        }
+        {
+          action = "<cmd>LazyGitFilter<CR>";
+          key = "<leader>gf";
+        }
       ];
     };
   };

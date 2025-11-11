@@ -1,7 +1,12 @@
 {
   imports = [./auto-cpufreq.nix ./asusctl.nix ./boot.nix ./nvidia.nix ./vfio.nix];
 
-  swapDevices = [{device = "/swapfile";}];
+  swapDevices = [
+    {
+      device = "/swapfile";
+      size = 8192;
+    }
+  ];
 
   programs.ssh.startAgent = true;
 

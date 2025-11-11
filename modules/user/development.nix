@@ -7,6 +7,7 @@
     # Development Tools
     git
     gitlab-runner
+    lazygit
     gotty
     spring-boot-cli
     godot

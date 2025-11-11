@@ -45,12 +45,13 @@
       ];
 
       plugins = {
-        web-devicons.enable = true;
         improved-search.enable = true;
         markdown-preview.enable = true;
         typescript-tools.enable = true;
         nvim-autopairs.enable = true;
         vim-css-color.enable = true;
+        git-conflict.enable = true;
+        web-devicons.enable = true;
         cmp-buffer.enable = true;
         ts-autotag.enable = true;
         neoscroll.enable = true;
@@ -58,6 +59,7 @@
         hardtime.enable = true;
         gitsigns.enable = true;
         luasnip.enable = true;
+        lazygit.enable = true;
         oil.enable = true;
 
         telescope = {

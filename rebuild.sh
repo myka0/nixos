@@ -8,7 +8,7 @@ nvim
 alejandra . &>/dev/null
 
 # Show changes
-git diff -U0 --color=always | gum pager
+lazygit
 
 sudo -v
 
