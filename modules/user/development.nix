@@ -41,6 +41,7 @@
     rustup
     uncrustify
     astyle
+    black
     postgresql
     go
     golangci-lint
