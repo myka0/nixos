@@ -4,9 +4,9 @@
     mimeApps = {
       enable = true;
       defaultApplications = {
-        "text/html" = "qutebrowser.desktop";
-        "x-scheme-handler/http" = "qutebrowser.desktop";
-        "x-scheme-handler/https" = "qutebrowser.desktop";
+        "text/html" = "firefox.desktop";
+        "x-scheme-handler/http" = "firefox.desktop";
+        "x-scheme-handler/https" = "firefox.desktop";
         "text/plain" = "kate.desktop";
         "text/x-csrc" = "kate.desktop";
         "text/x-chdr" = "kate.desktop";

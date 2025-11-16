@@ -4,7 +4,9 @@
   lib,
   inputs,
   ...
-}: {
+}: let
+  looking-glass-client = pkgs.callPackage ./looking-glass {};
+in {
   options = {
     vfio.enable =
       lib.mkEnableOption "Enables VFIO and other utilities for Virtualisation";
