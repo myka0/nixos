@@ -14,6 +14,12 @@
     gum
     vhs
     bruno
+    protobuf
+    grpc
+    grpcui
+    re2
+    openssl
+    abseil-cpp
     libxml2
     jansson
     meson

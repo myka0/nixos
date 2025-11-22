@@ -11,7 +11,7 @@
         inlayHints = true;
 
         servers = {
-          clangd.enable = true;
+          protols.enable = true;
           gopls.enable = true;
           ts_ls.enable = true;
           volar.enable = true;
@@ -22,6 +22,11 @@
           lua_ls = {
             enable = true;
             settings.telemetry.enable = false;
+          };
+
+          clangd = {
+            enable = true;
+            filetypes = ["c" "cc" "cpp" "objc" "objcpp" "cuda"];
           };
         };
 
