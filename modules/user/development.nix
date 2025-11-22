@@ -13,6 +13,9 @@
     godot
     gum
     vhs
+    kubernetes
+    kubernetes-helm
+    kubectl
     bruno
     protobuf
     grpc
