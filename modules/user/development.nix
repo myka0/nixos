@@ -17,6 +17,7 @@
     kubernetes-helm
     kubectl
     bruno
+    prometheus
     protobuf
     grpc
     grpcui
