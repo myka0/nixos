@@ -57,4 +57,6 @@
     xkb.layout = "us";
     xkb.variant = "";
   };
+
+  virtualisation.docker.enable = true;
 }
