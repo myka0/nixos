@@ -50,7 +50,7 @@
   auto-cpufreq.enable = true;
   asusctl.enable = true;
   gnome.enable = false;
-  nvidia.enable = false;
+  nvidia.enable = true;
   steam.enable = true;
   vfio.enable = false;
 
