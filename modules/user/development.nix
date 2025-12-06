@@ -63,7 +63,7 @@
     mpi
     racket
     jdk17
-    python3
+    python313
 
     # Editors
     kdePackages.kate
