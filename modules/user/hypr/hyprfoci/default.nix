@@ -8,7 +8,7 @@
 }:
 mkHyprlandPlugin (finalAttrs: {
   pluginName = "hyprfoci";
-  version = "0.52.1";
+  version = "0.2.0";
 
   src = fetchFromGitHub {
     owner = "pohlrabi404";
@@ -16,6 +16,10 @@ mkHyprlandPlugin (finalAttrs: {
     tag = "v${finalAttrs.version}";
     hash = "sha256-K7xYYyuE9Y1/QlOxaYOt+o7WnhNDlXAc3Ms61jl1jI0=";
   };
+
+  patches = [
+    ./version-check.patch
+  ];
 
   nativeBuildInputs = [
     meson
