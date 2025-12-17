@@ -29,7 +29,7 @@ wait "$rebuild_pid" || {
 }
 
 # Get generation info
-current_gen=$(nixos-rebuild list-generations | awk '/current/ {print $1, $3, $4}')
+current_gen=$(nixos-rebuild list-generations | awk 'NR>1 && $NF=="True" {print $1, $2, $3}')
 read -r gen_number gen_date gen_time <<< "$current_gen"
 
 # Commit changes
