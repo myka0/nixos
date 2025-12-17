@@ -66,7 +66,7 @@ in {
 
           hyprfoci = {
             size = "100, 0";
-            pos = "0, 0";
+            pos = "0, -31";
             origin = "1, 0";
             imgs = "${bongo}";
           };
