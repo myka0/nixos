@@ -30,12 +30,11 @@
     protonvpn-gui
     vesktop
     ungoogled-chromium
-    globalprotect-openconnect
     libreoffice
     aseprite
     krita
     xf86_input_wacom
-    wacomtablet
+    kdePackages.wacomtablet
     obsidian
     audacity
     via
@@ -76,7 +75,7 @@
     libsecret
     gparted
     gnome-tweaks
-    libsForQt5.kdeconnect-kde
+    kdePackages.kdeconnect-kde
     xdg-utils
     protonup-qt
     syncthing
@@ -88,7 +87,7 @@
     nix-ld
     clinfo
     vulkan-tools
-    glxinfo
+    mesa-demos
     pigz
     pbzip2
     zsync
@@ -98,6 +97,5 @@
     egl-wayland
     eglexternalplatform
     libGL
-    valgrind
   ];
 }

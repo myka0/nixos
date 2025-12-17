@@ -32,6 +32,7 @@
     gnumake
     libcap
     zlib
+    valgrind
     openblas
     vagrant
     ansible

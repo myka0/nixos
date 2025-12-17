@@ -215,7 +215,6 @@
       xcur2png
       wev
       xdg-desktop-portal-hyprland
-      kdePackages.xwaylandvideobridge
     ];
   };
 }
