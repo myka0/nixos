@@ -4,7 +4,13 @@
   lib,
   inputs,
   ...
-}: {
+}: let
+  hyprfoci = pkgs.callPackage ./hyprfoci.nix {
+    mkHyprlandPlugin = pkgs.hyprlandPlugins.mkHyprlandPlugin;
+  };
+
+  bongo = ./bongo;
+in {
   options = {hyprland.enable = lib.mkEnableOption "Enables Hyprland";};
 
   config = lib.mkIf config.hyprland.enable {
@@ -20,6 +26,7 @@
       xwayland.enable = true;
       plugins = with pkgs; [
         hyprlandPlugins.hyprsplit
+        hyprfoci
       ];
 
       settings = {
@@ -55,6 +62,13 @@
           hyprsplit = {
             num_workspaces = 7;
             persistent_workspaces = true;
+          };
+
+          hyprfoci = {
+            size = "100, 0";
+            pos = "0, 0";
+            origin = "1, 0";
+            imgs = "${bongo}";
           };
         };
 
