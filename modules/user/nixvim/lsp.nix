@@ -14,7 +14,7 @@
           protols.enable = true;
           gopls.enable = true;
           ts_ls.enable = true;
-          volar.enable = true;
+          vue_ls.enable = true;
           tailwindcss.enable = true;
           pyright.enable = true;
           jdtls.enable = true;
