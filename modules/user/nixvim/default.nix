@@ -6,7 +6,7 @@
   ...
 }: {
   imports = [
-    inputs.nixvim.homeManagerModules.nixvim
+    inputs.nixvim.homeModules.nixvim
     ./avante.nix
     ./cmp.nix
     ./extra-plugins.nix
@@ -96,8 +96,10 @@
 
         lspsaga = {
           enable = true;
-          ui.devicon = true;
-          lightbulb.enable = false;
+          settings = {
+            ui.devicon = true;
+            lightbulb.enable = false;
+          };
         };
 
         none-ls = {

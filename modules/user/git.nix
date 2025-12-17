@@ -2,10 +2,12 @@
   programs.git = {
     enable = true;
     lfs.enable = true;
-    userName = "myka0";
-    userEmail = "mykamayer0@gmail.com";
-    extraConfig = {
+    settings = {
       init.defaultBranch = "main";
+      user = {
+        name = "myka0";
+        email = "mykamayer0@gmail.com";
+      };
     };
   };
 }

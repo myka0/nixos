@@ -44,9 +44,7 @@
     thermald.enable = true;
 
     # Lid Switch
-    logind.lidSwitch = "ignore";
-
-    postgresql.enable = true;
+    logind.settings.Login.HandleLidSwitch = "ignore";
   };
 
   services.xserver = {

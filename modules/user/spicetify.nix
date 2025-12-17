@@ -4,7 +4,7 @@
   ...
 }: {
   imports = [
-    inputs.spicetify-nix.homeModules.default
+    inputs.spicetify-nix.homeManagerModules.default
   ];
 
   programs.spicetify = let

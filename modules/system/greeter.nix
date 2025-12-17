@@ -1,13 +1,12 @@
 {pkgs, ...}: let
-  tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
+  tuigreet = "${pkgs.tuigreet}/bin/tuigreet";
 in {
   services.greetd = {
     enable = true;
     settings = {
       default_session = {
         command = ''
-          ${tuigreet} --time --time-format '%a, %d %b %Y • %T' --greeting  '[Become 
-                    Visible]' --asterisks --remember --cmd Hyprland'';
+          ${tuigreet} --time --time-format '%a, %d %b %Y • %T' --greeting  '[Become Visible]' --asterisks --remember --cmd Hyprland'';
         user = "greeter";
       };
     };
