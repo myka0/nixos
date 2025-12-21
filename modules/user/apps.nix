@@ -27,7 +27,6 @@
     unstable.blender
     electrum
     qbittorrent
-    protonvpn-gui
     vesktop
     ungoogled-chromium
     libreoffice
@@ -78,6 +77,7 @@
     kdePackages.kdeconnect-kde
     xdg-utils
     protonup-qt
+    protonplus
     syncthing
     xhosts
     xorg.xhost

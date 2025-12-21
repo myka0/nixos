@@ -49,7 +49,7 @@ in {
         general = {
           gaps_in = 4;
           gaps_out = 8;
-          border_size = 2;
+          border_size = 0;
           "col.active_border" = "rgb(6791C9)";
           "col.inactive_border" = "rgba(595959aa)";
 
@@ -86,7 +86,7 @@ in {
           };
 
           shadow = {
-            enabled = true;
+            enabled = false;
             range = 4;
             render_power = 3;
             color = "rgba(1a1a1aee)";
