@@ -46,6 +46,7 @@
     # TUI Apps
     wget
     curl
+    pv
     zip
     ffmpeg
     slurp
