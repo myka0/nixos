@@ -10,9 +10,12 @@
     hardware.nvidia = {
       package = config.boot.kernelPackages.nvidiaPackages.stable;
       modesetting.enable = true;
-      powerManagement.finegrained = true;
       nvidiaSettings = true;
       open = true;
+      powerManagement = {
+        enable = true;
+        finegrained = true;
+      };
       prime = {
         offload = {
           enable = true;

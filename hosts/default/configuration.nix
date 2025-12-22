@@ -47,7 +47,7 @@
   };
 
   # Modules
-  auto-cpufreq.enable = true;
+  auto-cpufreq.enable = false;
   asusctl.enable = true;
   gnome.enable = false;
   nvidia.enable = true;
