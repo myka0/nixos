@@ -13,6 +13,8 @@
     godot
     gum
     vhs
+    nvidia-docker
+    nvidia-container-toolkit
     kubernetes
     kubernetes-helm
     kubectl
