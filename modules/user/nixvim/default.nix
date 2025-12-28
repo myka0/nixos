@@ -59,6 +59,7 @@
         gitsigns.enable = true;
         luasnip.enable = true;
         lazygit.enable = true;
+        image.enable = true;
         oil.enable = true;
 
         telescope = {
