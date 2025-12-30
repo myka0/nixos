@@ -79,6 +79,7 @@
     xdg-utils
     protonup-qt
     protonplus
+    protontricks
     syncthing
     xhosts
     xorg.xhost
