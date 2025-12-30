@@ -74,6 +74,7 @@
     # Utils
     libsecret
     gparted
+    usbimager
     gnome-tweaks
     kdePackages.kdeconnect-kde
     xdg-utils
