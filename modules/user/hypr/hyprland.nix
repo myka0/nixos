@@ -30,6 +30,14 @@ in {
       ];
 
       settings = {
+        windowrulev2 = [
+          "float,class:^(com-group_finity-mascot-Main)$"
+          "noblur,class:^(com-group_finity-mascot-Main)$"
+          "nofocus,class:^(com-group_finity-mascot-Main)$"
+          "noshadow,class:^(com-group_finity-mascot-Main)$"
+          "bordersize 0,class:^(com-group_finity-mascot-Main)$"
+        ];
+
         input = {
           kb_layout = "us";
 
