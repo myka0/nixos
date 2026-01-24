@@ -33,9 +33,13 @@ in {
         windowrulev2 = [
           "float,class:^(com-group_finity-mascot-Main)$"
           "noblur,class:^(com-group_finity-mascot-Main)$"
-          "nofocus,class:^(com-group_finity-mascot-Main)$"
           "noshadow,class:^(com-group_finity-mascot-Main)$"
           "bordersize 0,class:^(com-group_finity-mascot-Main)$"
+
+          "float,class:^(Shijima-Qt)$"
+          "noblur,class:^(Shijima-Qt)$"
+          "noshadow,class:^(Shijima-Qt)$"
+          "bordersize 0,class:^(Shijima-Qt)$"
         ];
 
         input = {

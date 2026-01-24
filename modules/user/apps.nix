@@ -89,6 +89,8 @@
     nfs-utils
     nix-ld
     clinfo
+    vulkan-loader
+    vulkan-validation-layers
     vulkan-tools
     mesa-demos
     pigz
