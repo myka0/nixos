@@ -23,6 +23,7 @@
     lutris
     wineWowPackages.waylandFull
     moonlight-qt
+    strawberry
     zoom-us
     unstable.blender
     electrum
