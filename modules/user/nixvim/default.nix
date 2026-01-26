@@ -60,6 +60,7 @@
         luasnip.enable = true;
         lazygit.enable = true;
         image.enable = true;
+        godot.enable = true;
         oil.enable = true;
 
         telescope = {
