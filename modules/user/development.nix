@@ -55,6 +55,7 @@
     uncrustify
     astyle
     black
+    gdscript-formatter
     postgresql
     go
     golangci-lint
