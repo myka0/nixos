@@ -55,16 +55,10 @@ in {
       libvirtd = {
         enable = true;
         qemu = {
-          ovmf.enable = true;
           package = pkgs.old.qemu_kvm;
           runAsRoot = true;
           swtpm.enable = true;
         };
-      };
-
-      virtualbox.host = {
-        enable = true;
-        enableExtensionPack = true;
       };
     };
 

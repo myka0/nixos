@@ -9,6 +9,10 @@
         inherit (pkgs) system;
         config.allowUnfree = true;
       };
+      old = import inputs.nixpkgs-old {
+        inherit (pkgs) system;
+        config.allowUnfree = true;
+      };
     };
   };
 
@@ -23,7 +27,8 @@
     lutris
     wineWowPackages.waylandFull
     moonlight-qt
-    libgpod
+    old.libgpod
+    old.gtkpod
     strawberry
     zoom-us
     unstable.blender
