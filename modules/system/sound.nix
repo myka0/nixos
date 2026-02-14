@@ -19,5 +19,5 @@
 
   services.pulseaudio.enable = false;
 
-  environment.systemPackages = with pkgs; [pavucontrol paprefs];
+  environment.systemPackages = with pkgs; [pavucontrol paprefs alsa-utils];
 }

@@ -3,6 +3,7 @@
     remind = ./remind.sh;
     record-region = ./record-region.sh;
     record-window = ./record-window.sh;
+    toggle-mic = ./toggle-mic.sh;
   };
 
   mkApp = name: path:

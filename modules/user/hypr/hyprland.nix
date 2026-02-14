@@ -120,7 +120,7 @@ in {
         monitor = eDP-1, preferred, auto, 1
         monitor = DP-1, 1920x1080@144, auto, 1
         monitor = DP-3, preferred, auto, 1
-        monitor = DP-4, 1920x1080, auto, 1
+        monitor = DP-4, preferred, auto, 1
 
         # Animations
         animation = windows, 1, 7, myBezier
@@ -164,6 +164,7 @@ in {
         bind = , XF86Launch1, exec, amixer set Capture cap
         bind = , XF86AudioRaiseVolume, exec, amixer sset Master 5%+
         bind = , XF86AudioLowerVolume, exec, amixer sset Master 5%-
+        bind = $mainMod SHIFT, M, exec, toggle-mic
 
         # Focus and workspace movement
         bind = $mainMod, left, movefocus, l
