@@ -155,6 +155,7 @@ in {
 
         # System actions
         bind = $mainMod, M, fullscreen,
+        bind = $mainMod SHIFT, M, exec, toggle-mic
         bind = $mainMod SHIFT, Q, exec, systemctl suspend
         bind = $mainMod SHIFT, equal, exec, hyprctl keyword monitor eDP-1, 2560x1600, auto, 1.6
         bind = $mainMod SHIFT, minus, exec, hyprctl keyword monitor eDP-1, 2560x1600, auto, 1
@@ -164,7 +165,6 @@ in {
         bind = , XF86Launch1, exec, amixer set Capture cap
         bind = , XF86AudioRaiseVolume, exec, amixer sset Master 5%+
         bind = , XF86AudioLowerVolume, exec, amixer sset Master 5%-
-        bind = $mainMod SHIFT, M, exec, toggle-mic
 
         # Focus and workspace movement
         bind = $mainMod, left, movefocus, l
