@@ -78,6 +78,7 @@
     spotify-player
     openssl
     dysk
+    alda
 
     # Utils
     libsecret
