@@ -5,6 +5,7 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
+    jack.enable = true;
   };
 
   services.jack = {
@@ -19,5 +20,5 @@
 
   services.pulseaudio.enable = false;
 
-  environment.systemPackages = with pkgs; [pavucontrol paprefs alsa-utils];
+  environment.systemPackages = with pkgs; [pavucontrol paprefs alsa-utils pipewire];
 }

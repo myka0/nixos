@@ -30,6 +30,8 @@
         enable = true;
         driSupport32Bit = true;
       };
+
+      nvidia-container-toolkit.enable = true;
     };
   };
 }

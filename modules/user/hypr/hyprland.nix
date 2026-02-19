@@ -138,7 +138,7 @@ in {
         # Application actions
         bind = $mainMod, RETURN, exec, kitty
         bind = $mainMod SHIFT, C, killactive,
-        bind = $mainMod, ESC, exit,
+        bind = $mainMod, ESC, exec, exit
         bind = $mainMod, F, exec, nemo
         bind = $mainMod, V, togglefloating,
         bind = $mainMod, R, exec, wofi

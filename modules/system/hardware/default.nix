@@ -56,8 +56,5 @@
     xkb.variant = "";
   };
 
-  virtualisation.docker = {
-    enable = true;
-    enableNvidia = true;
-  };
+  virtualisation.docker.enable = true;
 }
