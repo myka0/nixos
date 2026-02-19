@@ -49,7 +49,6 @@
     openscad
     wireshark
     dmenu
-    puredata
 
     # TUI Apps
     wget

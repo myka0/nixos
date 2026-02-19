@@ -15,10 +15,10 @@
     alsa.enable = false;
 
     # support ALSA only programs via loopback device (supports programs like Steam)
-    loopback.enable = false;
+    loopback.enable = true;
   };
 
   services.pulseaudio.enable = false;
 
-  environment.systemPackages = with pkgs; [pavucontrol paprefs alsa-utils pipewire pipewire.jack];
+  environment.systemPackages = with pkgs; [pavucontrol paprefs alsa-utils pipewire pipewire.jack jack2 puredata];
 }
