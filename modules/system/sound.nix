@@ -20,5 +20,5 @@
 
   services.pulseaudio.enable = false;
 
-  environment.systemPackages = with pkgs; [pavucontrol paprefs alsa-utils pipewire];
+  environment.systemPackages = with pkgs; [pavucontrol paprefs alsa-utils pipewire pipewire.jack];
 }
