@@ -52,7 +52,7 @@
   gnome.enable = false;
   nvidia.enable = false;
   steam.enable = true;
-  vfio.enable = true;
+  vfio.enable = false;
 
   # Run unpatched dynamic binaries
   programs.nix-ld.enable = true;
