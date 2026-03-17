@@ -87,6 +87,8 @@
     NIXOS_OZONE_WL = "1";
     QT_DEBUG_PLUGINS = 1;
     QT_QPA_PLATFORMTHEME = "qt6ct";
+    XDG_CURRENT_DESKTOP = "Hyprland";
+    XDG_SESSION_TYPE = "wayland";
   };
 
   system.stateVersion = "25.11";
