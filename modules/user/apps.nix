@@ -35,6 +35,7 @@
     electrum
     qbittorrent
     vesktop
+    legcord
     ungoogled-chromium
     libreoffice
     aseprite
