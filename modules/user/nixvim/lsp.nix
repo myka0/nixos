@@ -18,6 +18,7 @@
           tailwindcss.enable = true;
           pyright.enable = true;
           jdtls.enable = true;
+          gleam.enable = true;
 
           lua_ls = {
             enable = true;

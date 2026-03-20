@@ -76,6 +76,7 @@
     cbonsai
     asciiquarium
     spotify-player
+    codecrafters-cli
     openssl
     dysk
     alda

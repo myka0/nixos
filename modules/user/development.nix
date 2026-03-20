@@ -68,6 +68,7 @@
     racket
     jdk17
     python313
+    gleam
 
     # Editors
     kdePackages.kate
