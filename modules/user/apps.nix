@@ -34,7 +34,6 @@
     unstable.blender
     electrum
     qbittorrent
-    vesktop
     legcord
     ungoogled-chromium
     libreoffice
@@ -48,6 +47,7 @@
     anki
     kicad
     openscad
+    librecad
     wireshark
     dmenu
 
