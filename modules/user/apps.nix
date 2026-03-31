@@ -22,8 +22,8 @@
     nemo-with-extensions
     kitty
     firefox
-    gimp
-    gmic-qt
+    gimp-with-plugins
+    gimpPlugins.gmic
     vlc
     lutris
     wineWowPackages.waylandFull
