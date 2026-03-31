@@ -23,6 +23,7 @@
     kitty
     firefox
     gimp
+    gmic-qt
     vlc
     lutris
     wineWowPackages.waylandFull
