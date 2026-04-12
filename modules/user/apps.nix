@@ -43,6 +43,7 @@
     xf86_input_wacom
     kdePackages.wacomtablet
     obsidian
+    pureref
     audacity
     via
     anki
