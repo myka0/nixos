@@ -59,7 +59,7 @@ in {
 
         device = {
           name = "wacom-intuos-pro-m-pen";
-          output = "DP-4";
+          output = "DP-1";
         };
 
         general = {
@@ -122,7 +122,8 @@ in {
 
       extraConfig = ''
         monitor = eDP-1, preferred, auto, 1
-        monitor = DP-1, 1920x1080@144, auto, 1
+        monitor = HDMI-A-1, preferred, 2560x0, 1
+        monitor = DP-1, 1920x1080@144, 4480x0, 1
         monitor = DP-3, preferred, auto, 1
         monitor = DP-4, preferred, auto, 1
 
