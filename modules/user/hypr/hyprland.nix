@@ -121,7 +121,7 @@ in {
       };
 
       extraConfig = ''
-        monitor = eDP-1, preferred, auto, 1
+        monitor = eDP-1, preferred, 0x0, 1
         monitor = HDMI-A-1, preferred, 2560x0, 1
         monitor = DP-1, 1920x1080@144, 4480x0, 1
         monitor = DP-3, preferred, auto, 1
