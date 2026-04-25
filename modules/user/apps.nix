@@ -42,6 +42,7 @@
     krita
     xf86_input_wacom
     kdePackages.wacomtablet
+    prismlauncher
     obsidian
     pureref
     audacity
