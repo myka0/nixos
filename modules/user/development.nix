@@ -18,6 +18,7 @@
     kubernetes
     kubernetes-helm
     kubectl
+    cloudflared
     bruno
     prometheus
     protobuf
