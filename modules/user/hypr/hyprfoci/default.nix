@@ -14,7 +14,7 @@ mkHyprlandPlugin (finalAttrs: {
     owner = "pohlrabi404";
     repo = "Hyprfoci";
     tag = "v${finalAttrs.version}";
-    hash = "sha256-K7xYYyuE9Y1/QlOxaYOt+o7WnhNDlXAc3Ms61jl1jI0=";
+    hash = "sha256-8r3J85jh+9PSxl6hdeaq/ReS4aJm2d87/+luOT83mjs=";
   };
 
   patches = [

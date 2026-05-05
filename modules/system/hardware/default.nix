@@ -20,6 +20,12 @@
     hostName = "onyx";
   };
 
+  services.journald.extraConfig = ''
+    SystemMaxUse=500M
+    SystemKeepFree=1G
+    MaxRetentionSec=7day
+  '';
+
   hardware = {
     # Enables proprietary firmware for enhanced hardware support
     enableRedistributableFirmware = true;
