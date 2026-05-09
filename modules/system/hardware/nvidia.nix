@@ -26,9 +26,9 @@
           # nvidiaBusId = "PCI:0:01:0";
         };
       };
-      opengl = {
+      graphics = {
         enable = true;
-        driSupport32Bit = true;
+        enable32Bit = true;
       };
 
       nvidia-container-toolkit.enable = true;
