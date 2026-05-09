@@ -17,10 +17,6 @@ mkHyprlandPlugin (finalAttrs: {
     hash = "sha256-R4PuZgkmq3tLWex0ovHZOegUg4k64CBzYd8z1EsVuwo=";
   };
 
-  # patches = [
-  #   ./version-check.patch
-  # ];
-
   nativeBuildInputs = [
     meson
     ninja

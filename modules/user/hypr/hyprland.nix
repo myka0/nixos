@@ -5,7 +5,7 @@
   inputs,
   ...
 }: let
-  hyprfoci = pkgs.callPackage ./hyprfoci {
+  hyprfoci = pkgs.callPackage ./hyprfoci.nix {
     mkHyprlandPlugin = pkgs.hyprlandPlugins.mkHyprlandPlugin;
   };
 
