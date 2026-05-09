@@ -8,18 +8,18 @@
 }:
 mkHyprlandPlugin (finalAttrs: {
   pluginName = "hyprfoci";
-  version = "0.2.0";
+  version = "0.2.1";
 
   src = fetchFromGitHub {
     owner = "pohlrabi404";
     repo = "Hyprfoci";
-    tag = "v${finalAttrs.version}";
-    hash = "sha256-8r3J85jh+9PSxl6hdeaq/ReS4aJm2d87/+luOT83mjs=";
+    rev = "bffbd8b2d2cf91e8ad1a834fe74efc68d18e540c";
+    hash = "sha256-R4PuZgkmq3tLWex0ovHZOegUg4k64CBzYd8z1EsVuwo=";
   };
 
-  patches = [
-    ./version-check.patch
-  ];
+  # patches = [
+  #   ./version-check.patch
+  # ];
 
   nativeBuildInputs = [
     meson
