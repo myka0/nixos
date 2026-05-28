@@ -20,6 +20,11 @@
     hostName = "onyx";
   };
 
+  # Prevent ROG keyboard USB device from being suspended at boot
+  services.udev.extraRules = ''
+    ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0b05", ATTR{idProduct}=="19b6", ATTR{power/control}="on"
+  '';
+
   services.journald.extraConfig = ''
     SystemMaxUse=500M
     SystemKeepFree=1G

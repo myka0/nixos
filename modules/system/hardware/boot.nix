@@ -11,6 +11,11 @@
   };
 in {
   boot = {
+    # Give the ROG keyboard a little time to initialize
+    kernelParams = [
+      "atkbd.reset"
+    ];
+
     kernelPackages = pkgs.linuxPackages_7_0;
     kernelPatches = map (patch: {inherit patch;}) [
       # asus-armoury model support patches
