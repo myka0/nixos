@@ -62,6 +62,7 @@
     ffmpeg
     slurp
     wf-recorder
+    fwupd
     p7zip
     tldr
     unzip

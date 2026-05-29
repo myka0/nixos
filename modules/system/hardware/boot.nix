@@ -11,9 +11,9 @@
   };
 in {
   boot = {
-    # Give the ROG keyboard a little time to initialize
+    # Reduce atkbd-hid-asus conflicts
     kernelParams = [
-      "atkbd.reset"
+      "atkbd.soft_raw=1"
     ];
 
     kernelPackages = pkgs.linuxPackages_7_0;
