@@ -8,7 +8,9 @@
   modulesPath,
   ...
 }: {
-  imports = [(modulesPath + "/installer/scan/not-detected.nix")];
+  imports = [
+    (modulesPath + "/installer/scan/not-detected.nix")
+  ];
 
   boot.initrd.availableKernelModules = ["xhci_pci" "thunderbolt" "nvme" "usbhid" "rtsx_pci_sdmmc"];
   boot.initrd.kernelModules = [];
@@ -26,23 +28,13 @@
     options = ["fmask=0022" "dmask=0022"];
   };
 
-  fileSystems."/home/myka/vm" = {
-    device = "/dev/disk/by-uuid/a0cfeb52-a3ba-41d8-9ae7-5c8c9f765b3e";
+  fileSystems."/home/myka/secondary" = {
+    device = "/dev/disk/by-uuid/f4133d04-ac2a-46d3-a4a2-fba4881feb41";
     fsType = "ext4";
   };
 
   swapDevices = [];
 
-  # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
-  # (the default) this is the recommended approach. When using systemd-networkd it's
-  # still possible to use this option, but it's recommended to use it in conjunction
-  # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
-  networking.useDHCP = lib.mkDefault true;
-  # networking.interfaces.enp0s20f0u2u1.useDHCP = lib.mkDefault true;
-  # networking.interfaces.virbr0.useDHCP = lib.mkDefault true;
-  # networking.interfaces.wlo1.useDHCP = lib.mkDefault true;
-
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
-  hardware.cpu.intel.updateMicrocode =
-    lib.mkDefault config.hardware.enableRedistributableFirmware;
+  hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
