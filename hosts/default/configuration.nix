@@ -41,11 +41,6 @@
     backupFileExtension = "backup";
   };
 
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-
   # Modules
   auto-cpufreq.enable = false;
   asusctl.enable = true;
@@ -91,5 +86,5 @@
     XDG_SESSION_TYPE = "wayland";
   };
 
-  system.stateVersion = "25.11";
+  system.stateVersion = "26.05";
 }

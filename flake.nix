@@ -2,24 +2,26 @@
   description = "Nixos config flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-old.url = "github:nixos/nixpkgs/nixos-23.11";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.11";
+      url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     nixvim = {
-      url = "github:nix-community/nixvim/nixos-25.11";
+      url = "github:nix-community/nixvim/nixos-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+
+    nixpkgs-hyprland.url = "github:nixos/nixpkgs/0c88e1f2bdb93d5999019e99cb0e61e1fe2af4c5";
   };
 
   outputs = {

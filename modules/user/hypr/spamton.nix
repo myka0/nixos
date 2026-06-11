@@ -17,10 +17,10 @@
 
     buildInputs = [
       pkgs.jdk8
-      pkgs.xorg.libX11
-      pkgs.xorg.libXext
-      pkgs.xorg.libXrender
-      pkgs.xorg.libXtst
+      pkgs.libX11
+      pkgs.libXext
+      pkgs.libXrender
+      pkgs.libXtst
     ];
 
     installPhase = ''
@@ -30,10 +30,10 @@
       mkdir -p $out/bin
       makeWrapper ${pkgs.jdk8}/bin/java $out/bin/spamton \
         --prefix LD_LIBRARY_PATH : ${pkgs.lib.makeLibraryPath [
-        pkgs.xorg.libX11
-        pkgs.xorg.libXext
-        pkgs.xorg.libXrender
-        pkgs.xorg.libXtst
+        pkgs.libX11
+        pkgs.libXext
+        pkgs.libXrender
+        pkgs.libXtst
       ]}:${pkgs.jdk8}/jre/lib/amd64:${pkgs.jdk8}/jre/lib/amd64/server \
         --add-flags "-Xmx1000m \
           -classpath $out/share/spamton/Shimeji.jar \

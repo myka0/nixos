@@ -25,6 +25,7 @@
     programs.neovim.defaultEditor = true;
     programs.nixvim = {
       enable = true;
+      nixpkgs.config.allowUnfree = true;
       clipboard.register = "unnamedplus";
 
       opts = {
@@ -72,18 +73,6 @@
             media-files.enable = true;
             undo.enable = true;
           };
-        };
-
-        jdtls = {
-          enable = true;
-          autoLoad = true;
-          settings.cmd = [
-            "java"
-            "-data"
-            "/home/myka"
-            "-configuration"
-            "/home/myka"
-          ];
         };
 
         snacks = {

@@ -17,8 +17,6 @@
           vue_ls.enable = true;
           tailwindcss.enable = true;
           pyright.enable = true;
-          jdtls.enable = true;
-          gleam.enable = true;
 
           lua_ls = {
             enable = true;
@@ -28,6 +26,17 @@
           clangd = {
             enable = true;
             filetypes = ["c" "cc" "cpp" "objc" "objcpp" "cuda"];
+          };
+
+          jdtls = {
+            enable = true;
+            cmd = [
+              "java"
+              "-data"
+              "/home/myka"
+              "-configuration"
+              "/home/myka"
+            ];
           };
         };
 

@@ -31,7 +31,7 @@
         enable32Bit = true;
       };
 
-      nvidia-container-toolkit.enable = true;
+      nvidia-container-toolkit.enable = false;
     };
   };
 }

@@ -31,14 +31,6 @@ in {
       "${g14_patches}/0001-acpi-proc-idle-skip-dummy-wait.patch"
       "${g14_patches}/0070-acpi-x86-s2idle-Add-ability-to-configure-wakeup-by-A.patch"
 
-      # backlight / display patches
-      "${g14_patches}/PATCH-asus-wmi-fixup-screenpad-brightness.patch"
-      "${g14_patches}/0084-enable-steam-deck-hdr.patch"
-
-      # tablet mode patches
-      "${g14_patches}/sys-kernel_arch-sources-g14_files-0047-asus-nb-wmi-Add-tablet_mode_sw-lid-flip.patch"
-      "${g14_patches}/sys-kernel_arch-sources-g14_files-0048-asus-nb-wmi-fix-tablet_mode_sw_int.patch"
-
       # audio fixes
       "${g14_patches}/ga403wr-fix-audio.patch"
 

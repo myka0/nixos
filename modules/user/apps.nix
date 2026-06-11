@@ -26,11 +26,7 @@
     gimpPlugins.gmic
     vlc
     lutris
-    wineWowPackages.waylandFull
-    moonlight-qt
-    old.libgpod
-    old.gtkpod
-    strawberry
+    wineWow64Packages.waylandFull
     zoom-us
     unstable.blender
     electrum
@@ -44,14 +40,13 @@
     kdePackages.wacomtablet
     prismlauncher
     obsidian
-    pureref
+    # pureref
     audacity
     via
     anki
     kicad
     openscad
     librecad
-    wireshark
     dmenu
 
     # TUI Apps
@@ -75,7 +70,6 @@
     woeusb
     udisks
     dust
-    texliveFull
     cowsay
     cbonsai
     asciiquarium
@@ -97,8 +91,8 @@
     protontricks
     syncthing
     xhosts
-    xorg.xhost
-    xorg.libxkbfile
+    xhost
+    libxkbfile
     ntfs3g
     nfs-utils
     nix-ld

@@ -9,11 +9,31 @@
     mkHyprlandPlugin = pkgs.hyprlandPlugins.mkHyprlandPlugin;
   };
 
+  hyprsplit = pkgs.callPackage ./hyprsplit.nix {
+    mkHyprlandPlugin = pkgs.hyprlandPlugins.mkHyprlandPlugin;
+  };
+
   bongo = ./bongo;
 in {
   options = {hyprland.enable = lib.mkEnableOption "Enables Hyprland";};
 
   config = lib.mkIf config.hyprland.enable {
+    # Pin Hyprland and related packages to v0.52.1
+    nixpkgs.overlays = [
+      (final: prev: let
+        hp = inputs.nixpkgs-hyprland.legacyPackages.${prev.system};
+      in {
+        hyprland = hp.hyprland;
+        hyprlandPlugins = hp.hyprlandPlugins;
+        xdg-desktop-portal-hyprland = hp.xdg-desktop-portal-hyprland;
+        hyprpaper = hp.hyprpaper;
+        hyprpolkitagent = hp.hyprpolkitagent;
+        hyprpicker = hp.hyprpicker;
+        hyprshot = hp.hyprshot;
+        hyprcursor = hp.hyprcursor;
+      })
+    ];
+
     # Enable Hyprland XDG portal
     xdg.portal = {
       enable = true;
@@ -29,7 +49,7 @@ in {
       enable = true;
       xwayland.enable = true;
       plugins = with pkgs; [
-        hyprlandPlugins.hyprsplit
+        hyprsplit
         hyprfoci
       ];
 
@@ -121,6 +141,9 @@ in {
       };
 
       extraConfig = ''
+        debug.disable_logs = false
+        debug.gl_debugging = true
+
         monitor = eDP-1, preferred, 0x0, 1
         monitor = HDMI-A-1, preferred, 2560x0, 1
         monitor = DP-1, 1920x1080@144, 4480x0, 1

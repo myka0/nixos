@@ -14,7 +14,7 @@
     gum
     vhs
     nvidia-docker
-    nvidia-container-toolkit
+    # nvidia-container-toolkit
     kubernetes
     kubernetes-helm
     kubectl
@@ -69,9 +69,6 @@
     racket
     jdk17
     python313
-    gleam
-    beamMinimal28Packages.erlang
-    beamMinimal28Packages.rebar3
 
     # Editors
     kdePackages.kate
