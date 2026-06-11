@@ -37,6 +37,7 @@ in {
     wayland.windowManager.hyprland = {
       enable = true;
       package = hyprlandPkg;
+      configType = "hyprlang";
       xwayland.enable = true;
       plugins = with hyprPkgs; [
         hyprsplit
@@ -131,9 +132,6 @@ in {
       };
 
       extraConfig = ''
-        debug.disable_logs = false
-        debug.gl_debugging = true
-
         monitor = eDP-1, preferred, 0x0, 1
         monitor = HDMI-A-1, preferred, 2560x0, 1
         monitor = DP-1, 1920x1080@144, 4480x0, 1
