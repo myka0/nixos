@@ -230,7 +230,6 @@ in {
         exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
         exec-once = hyprpm reload -n
         exec-once = systemctl --user start hyprpolkitagent
-        exec-once = hyprpaper
         exec-once = nm-applet --indicator
         exec-once = waybar
         exec-once = swaync
@@ -242,10 +241,12 @@ in {
     home.sessionVariables = {
       WLR_NO_HARDWARE_CURSORS = "1";
       NIXOS_OZONE_WL = "1";
+
+      # Restrict Hyprland to the Intel GPU
+      AQ_DRM_DEVICES = "/dev/dri/card0";
     };
 
     home.packages = with pkgs; [
-      hyprpaper
       hyprpolkitagent
       hyprpicker
       hyprshot

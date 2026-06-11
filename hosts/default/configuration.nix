@@ -84,6 +84,9 @@
     QT_QPA_PLATFORMTHEME = "qt6ct";
     XDG_CURRENT_DESKTOP = "Hyprland";
     XDG_SESSION_TYPE = "wayland";
+
+    # Restrict Hyprland to the Intel GPU
+    AQ_DRM_DEVICES = "/dev/dri/card0";
   };
 
   system.stateVersion = "26.05";

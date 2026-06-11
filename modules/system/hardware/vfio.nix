@@ -15,7 +15,7 @@ in {
   config = lib.mkIf config.vfio.enable {
     nixpkgs.config = {
       packageOverrides = pkgs: {
-        old = import inputs.nixpkgs-old {
+        old = import inputs.nixpkgs-2311 {
           inherit (pkgs) system;
           config.allowUnfree = true;
         };

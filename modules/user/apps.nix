@@ -9,10 +9,6 @@
         inherit (pkgs) system;
         config.allowUnfree = true;
       };
-      old = import inputs.nixpkgs-old {
-        inherit (pkgs) system;
-        config.allowUnfree = true;
-      };
     };
   };
 
