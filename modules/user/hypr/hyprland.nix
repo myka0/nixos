@@ -5,12 +5,18 @@
   inputs,
   ...
 }: let
-  hyprfoci = pkgs.callPackage ./hyprfoci.nix {
-    mkHyprlandPlugin = pkgs.hyprlandPlugins.mkHyprlandPlugin;
+  hyprlandPkg = inputs.hyprland.packages.${pkgs.system}.hyprland;
+
+  hyprPkgs = pkgs.extend (_final: _prev: {
+    hyprland = hyprlandPkg;
+  });
+
+  hyprfoci = hyprPkgs.callPackage ./hyprfoci.nix {
+    mkHyprlandPlugin = hyprPkgs.hyprlandPlugins.mkHyprlandPlugin;
   };
 
-  hyprsplit = pkgs.callPackage ./hyprsplit.nix {
-    mkHyprlandPlugin = pkgs.hyprlandPlugins.mkHyprlandPlugin;
+  hyprsplit = hyprPkgs.callPackage ./hyprsplit.nix {
+    mkHyprlandPlugin = hyprPkgs.hyprlandPlugins.mkHyprlandPlugin;
   };
 
   bongo = ./bongo;
@@ -18,26 +24,9 @@ in {
   options = {hyprland.enable = lib.mkEnableOption "Enables Hyprland";};
 
   config = lib.mkIf config.hyprland.enable {
-    # Pin Hyprland and related packages to v0.52.1
-    nixpkgs.overlays = [
-      (final: prev: let
-        hp = inputs.nixpkgs-hyprland.legacyPackages.${prev.system};
-      in {
-        hyprland = hp.hyprland;
-        hyprlandPlugins = hp.hyprlandPlugins;
-        xdg-desktop-portal-hyprland = hp.xdg-desktop-portal-hyprland;
-        hyprpaper = hp.hyprpaper;
-        hyprpolkitagent = hp.hyprpolkitagent;
-        hyprpicker = hp.hyprpicker;
-        hyprshot = hp.hyprshot;
-        hyprcursor = hp.hyprcursor;
-      })
-    ];
-
     # Enable Hyprland XDG portal
     xdg.portal = {
       enable = true;
-      extraPortals = [pkgs.xdg-desktop-portal-hyprland];
       config = {
         common = {
           default = ["hyprland"];
@@ -47,8 +36,9 @@ in {
 
     wayland.windowManager.hyprland = {
       enable = true;
+      package = hyprlandPkg;
       xwayland.enable = true;
-      plugins = with pkgs; [
+      plugins = with hyprPkgs; [
         hyprsplit
         hyprfoci
       ];
@@ -257,7 +247,6 @@ in {
     };
 
     home.packages = with pkgs; [
-      hyprland
       hyprpaper
       hyprpolkitagent
       hyprpicker
@@ -269,7 +258,6 @@ in {
       brightnessctl
       xcur2png
       wev
-      xdg-desktop-portal-hyprland
     ];
   };
 }
