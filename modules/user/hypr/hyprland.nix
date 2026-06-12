@@ -241,9 +241,6 @@ in {
     home.sessionVariables = {
       WLR_NO_HARDWARE_CURSORS = "1";
       NIXOS_OZONE_WL = "1";
-
-      # Restrict Hyprland to the Intel GPU
-      AQ_DRM_DEVICES = "/dev/dri/card0";
     };
 
     home.packages = with pkgs; [
