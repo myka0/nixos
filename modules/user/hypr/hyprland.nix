@@ -76,9 +76,9 @@ in {
         general = {
           gaps_in = 4;
           gaps_out = 8;
-          border_size = 0;
-          "col.active_border" = "rgb(6791C9)";
-          "col.inactive_border" = "rgba(595959aa)";
+          border_size = 2;
+          "col.active_border" = "rgb(dc4058)";
+          "col.inactive_border" = "rgb(42292d)";
 
           layout = "dwindle";
 

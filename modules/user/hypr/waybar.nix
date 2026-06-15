@@ -166,7 +166,7 @@
       #workspaces {
         background: #202020;
         margin: 6px 4px;
-        padding: 7px 4px;
+        padding: 7px 16px;
         border-radius: 16px;
         font-size: 2px;
       }
@@ -176,7 +176,7 @@
         font-size: 2px;
         padding: 2px 0px;
         margin: 0px 12px;
-        background-color: #6791C9;
+        background-color: #dc4058;
         border-radius: 16px;
         min-width: 12px;
         transition: all 0.3s ease-in-out;
@@ -186,7 +186,7 @@
         font-weight: bold;
         font-size: 2px;
         margin: 0px 8px;
-        background-color: #6791C9;
+        background-color: #dc4058;
         border-radius: 16px;
         min-width: 32px;
         transition: all 0.3s ease-in-out;
@@ -203,7 +203,7 @@
       }
 
       #custom-icon {
-        color: #6791C9;
+        color: #dc4058;
         background: #202020;
         margin: 0px 5px 0px 0px;
         padding: 0px 20px 0px 8px;

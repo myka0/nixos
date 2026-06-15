@@ -33,15 +33,15 @@
       cursor = "#ebdbb2";
 
       # Tab Bar
-      active_tab_background = "#7aa2f7";
-      active_tab_foreground = "#1f2335";
-      inactive_tab_background = "#292e42";
-      inactive_tab_foreground = "#545c7e";
+      active_tab_background = "#dc4058";
+      active_tab_foreground = "#3C0B12";
+      inactive_tab_background = "#42292d";
+      inactive_tab_foreground = "#7e545a";
       tab_bar_style = "powerline";
       tab_powerline_style = "slanted";
 
       # Window
-      active_border_color = "#6791C9";
+      active_border_color = "#dc4058";
       inactive_border_color = "#1D2021";
       window_border_width = 2;
       window_padding_width = 12;

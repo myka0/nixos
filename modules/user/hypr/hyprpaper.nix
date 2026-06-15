@@ -3,7 +3,7 @@
   inputs,
   ...
 }: let
-  wallpaper = ./wave.png;
+  wallpaper = ./wallpapers/teto-tb.jpg;
   hyprpaper-old = inputs.nixpkgs-2511.legacyPackages.${pkgs.system}.hyprpaper;
 in {
   services.hyprpaper = {

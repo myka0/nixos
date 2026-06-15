@@ -34,15 +34,14 @@
 
       window {
           margin: 0px;
-          border: 2px solid #6791C9;
+          border: 2px solid #dc4058;
           background-color: rgba(18, 18, 18, 0.5);
           border-radius: 0px;
       }
 
       #input {
-          padding: 2px;
+          padding: 2px 20px;
           margin: 20px;
-          padding-left: 20px;
           border: #595959 2px solid;
           color: #F2F4F5;
           font-weight: bold;
@@ -56,7 +55,7 @@
       }
 
       #input:focus {
-          border: #6791C9 2px solid;
+          border: #dc4058 2px solid;
           outline: none;
           box-shadow: none;
       }
@@ -118,7 +117,7 @@
           outline: none;
           margin: 0px;
           padding-left: 8px;
-          border: 2px solid #6791C9;
+          border: 2px solid #dc4058;
           border-radius: 0px;
           background: #202020;
       }
