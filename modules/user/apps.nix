@@ -97,6 +97,7 @@
     vulkan-validation-layers
     vulkan-tools
     mesa-demos
+    fontconfig
     pigz
     pbzip2
     zsync
