@@ -62,6 +62,7 @@
     golangci-lint
     delve
     nodejs
+    pnpm
     gcc
     libgcc
     libcxx
