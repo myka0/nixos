@@ -34,6 +34,8 @@
     cmake
     gnumake
     libcap
+    libglibutil
+    pnpm
     zlib
     valgrind
     openblas
@@ -62,7 +64,6 @@
     golangci-lint
     delve
     nodejs
-    pnpm
     gcc
     libgcc
     libcxx
