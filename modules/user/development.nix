@@ -3,6 +3,15 @@
   inputs,
   ...
 }: {
+  nixpkgs.config = {
+    packageOverrides = pkgs: {
+      unstable = import inputs.nixpkgs-unstable {
+        inherit (pkgs) system;
+        config.allowUnfree = true;
+      };
+    };
+  };
+
   home.packages = with pkgs; [
     # Development Tools
     git
@@ -75,5 +84,6 @@
     # Editors
     kdePackages.kate
     vscode
+    unstable.crush
   ];
 }
