@@ -15,6 +15,7 @@
           gopls.enable = true;
           ts_ls.enable = true;
           vue_ls.enable = true;
+          nil_ls.enable = true;
           tailwindcss.enable = true;
           pyright.enable = true;
 

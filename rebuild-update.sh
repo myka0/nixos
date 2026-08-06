@@ -2,8 +2,6 @@
 set -euo pipefail
 pushd ~/nixos/ >/dev/null
 
-nvim
-
 # Format Nix files
 alejandra . &>/dev/null
 
