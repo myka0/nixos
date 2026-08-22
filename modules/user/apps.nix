@@ -28,6 +28,7 @@
     electrum
     qbittorrent
     legcord
+    dorion
     ungoogled-chromium
     libreoffice
     aseprite
