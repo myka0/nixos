@@ -78,7 +78,7 @@
     libcxx
     mpi
     racket
-    jdk17
+    jdk25
     python313
 
     # Editors
