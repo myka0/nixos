@@ -28,6 +28,7 @@
     electrum
     qbittorrent
     legcord
+    unstable.vesktop
     dorion
     ungoogled-chromium
     libreoffice
