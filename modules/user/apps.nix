@@ -45,6 +45,7 @@
     kicad
     openscad
     librecad
+    freecad
     dmenu
 
     # TUI Apps
