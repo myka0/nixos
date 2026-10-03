@@ -1,15 +1,21 @@
 {
   config,
+  inputs,
   lib,
   ...
-}: {
+}: let
+  nvidiaPackages =
+    config.boot.kernelPackages.callPackage
+    "${inputs.nixpkgs-unstable}/pkgs/os-specific/linux/nvidia-x11/default.nix"
+    {};
+in {
   options = {nvidia.enable = lib.mkEnableOption "Enables Nvidia Drivers";};
 
   config = lib.mkIf config.nvidia.enable {
     services.xserver.videoDrivers = ["nvidia"];
     hardware = {
       nvidia = {
-        package = config.boot.kernelPackages.nvidiaPackages.stable;
+        package = nvidiaPackages.stable;
         modesetting.enable = true;
         nvidiaSettings = true;
         open = true;

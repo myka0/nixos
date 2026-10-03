@@ -29,7 +29,6 @@
     qbittorrent
     legcord
     unstable.vesktop
-    dorion
     ungoogled-chromium
     libreoffice
     aseprite
