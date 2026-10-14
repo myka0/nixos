@@ -20,6 +20,19 @@
   };
 
   bongo = ./bongo;
+
+  # xdg-desktop-portal-hyprland patched with RemoteDesktop portal
+  # Upstream: https://github.com/hyprwm/xdg-desktop-portal-hyprland/pull/428
+  portalPackage = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.xdg-desktop-portal-hyprland.overrideAttrs (old: {
+    version = "1.4.1+remotedesktop";
+    src = pkgs.fetchFromGitHub {
+      owner = "raj45681";
+      repo = "xdg-desktop-portal-hyprland";
+      rev = "f6950332ecf59c6c296a0642c4890b0916c0af21";
+      hash = "sha256-4va6QA4uBZRr3ZRCS+jxmM4ucywq2PcVQuRdnZhCHxI=";
+    };
+    buildInputs = (old.buildInputs or []) ++ [pkgs.libei];
+  });
 in {
   options = {hyprland.enable = lib.mkEnableOption "Enables Hyprland";};
 
@@ -37,6 +50,7 @@ in {
     wayland.windowManager.hyprland = {
       enable = true;
       package = hyprlandPkg;
+      portalPackage = portalPackage;
       configType = "hyprlang";
       xwayland.enable = true;
       plugins = with hyprPkgs; [
