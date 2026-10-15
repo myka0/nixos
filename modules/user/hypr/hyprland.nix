@@ -32,6 +32,20 @@
       hash = "sha256-4va6QA4uBZRr3ZRCS+jxmM4ucywq2PcVQuRdnZhCHxI=";
     };
     buildInputs = (old.buildInputs or []) ++ [pkgs.libei];
+    postPatch = ''
+      substituteInPlace src/shared/Eis.cpp \
+        --replace-fail 'eis_client_get_name(eisClient)' '(eis_client_get_name(eisClient) ?: "(unnamed)")' \
+        --replace-fail 'eis_device_get_name(device)' '(eis_device_get_name(device) ?: "(unnamed)")'
+
+      substituteInPlace src/portals/RemoteDesktop.cpp \
+        --replace-fail 'PSESSION->eis->setVirtualKeyboard(PSESSION->keyboard);' 'PSESSION->eis->setVirtualKeyboard(PSESSION->keyboard); PSESSION->eis->setKeymap({.fd = keymap.fd, .size = keymap.size});'
+
+      substituteInPlace src/shared/Eis.cpp \
+        --replace-fail 'if (keymap.fd != 0) {' 'if (keymap.fd >= 0 && keymap.size > 0) {'
+
+      substituteInPlace src/shared/Eis.cpp \
+        --replace-fail 'sendModifiers(depressed, 0, locked, 3)' 'sendModifiers(depressed, 0, locked, 0)'
+    '';
   });
 in {
   options = {hyprland.enable = lib.mkEnableOption "Enables Hyprland";};
