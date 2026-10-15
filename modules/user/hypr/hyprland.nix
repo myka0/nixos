@@ -45,6 +45,9 @@
 
       substituteInPlace src/shared/Eis.cpp \
         --replace-fail 'sendModifiers(depressed, 0, locked, 3)' 'sendModifiers(depressed, 0, locked, 0)'
+
+      substituteInPlace src/shared/Eis.cpp \
+        --replace-fail 'virtualPointer->sendMotion(0, eis_event_pointer_get_dx(e), eis_event_pointer_get_dy(e));' 'virtualPointer->sendMotion(0, wl_fixed_from_double(eis_event_pointer_get_dx(e)), wl_fixed_from_double(eis_event_pointer_get_dy(e)));'
     '';
   });
 in {
