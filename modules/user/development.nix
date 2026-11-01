@@ -50,6 +50,7 @@
     openblas
     vagrant
     ansible
+    unstable.ghidra
     pkg-config
     virtualenv
     devenv
@@ -80,6 +81,7 @@
     racket
     jdk25
     python313
+    uv
 
     # Editors
     kdePackages.kate
