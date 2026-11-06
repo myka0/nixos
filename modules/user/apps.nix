@@ -41,7 +41,6 @@
     audacity
     via
     anki
-    kicad
     openscad
     librecad
     freecad
