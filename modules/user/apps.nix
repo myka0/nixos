@@ -49,6 +49,8 @@
     # TUI Apps
     wget
     curl
+    ripgrep
+    ripgrep-all
     pv
     zip
     ffmpeg
