@@ -45,6 +45,7 @@
     librecad
     freecad
     dmenu
+    mangohud
 
     # TUI Apps
     wget
