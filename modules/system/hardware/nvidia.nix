@@ -23,6 +23,7 @@ in {
           enable = true;
           finegrained = true;
         };
+        dynamicBoost.enable = true;
         prime = {
           offload = {
             enable = true;
