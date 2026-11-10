@@ -51,6 +51,7 @@
     curl
     ripgrep
     ripgrep-all
+    sysstat
     pv
     zip
     ffmpeg
