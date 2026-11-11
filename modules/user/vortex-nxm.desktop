@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Vortex (NXM downloads)
+Exec=/home/myka/Games/vortex/nxm-handler.sh %u
+MimeType=x-scheme-handler/nxm;
+NoDisplay=true

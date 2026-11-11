@@ -1,6 +1,7 @@
 {
   xdg = {
     mime.enable = true;
+    dataFile."applications/vortex-nxm.desktop".source = ./vortex-nxm.desktop;
     mimeApps = {
       enable = true;
       defaultApplications = {
@@ -14,6 +15,7 @@
         "text/x-c++hdr" = "kate.desktop";
         "application/x-shellscript" = "kate.desktop";
         "application/json" = "kate.desktop";
+        "x-scheme-handler/nxm" = "vortex-nxm.desktop";
       };
     };
   };
