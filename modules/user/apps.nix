@@ -21,6 +21,7 @@
     gimp-with-plugins
     gimpPlugins.gmic
     vlc
+    mpv
     lutris
     wineWow64Packages.waylandFull
     zoom-us
